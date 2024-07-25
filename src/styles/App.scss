@@ -1,0 +1,281 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.App-menu-button {
+  position: absolute !important;
+  top: 10px;
+  left: 10px;
+  height: 1rem;
+  width: 1rem;
+}
+
+.App-theme-button {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  height: 1rem;
+  width: 1rem;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+}
+
+.App-verb {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-verb-search-block {
+  position: relative;
+  width: 60%;
+  margin-left: 20%;
+  height: 100%;
+  margin-top: 20px;
+  text-align: center;
+  &_close-btn {
+    position: absolute !important;
+    top: -15px;
+  }
+}
+
+.App-verb-search-list {
+  width: 100%;
+  max-height: 60%;
+  display: flex;
+  justify-content: center;
+}
+.App-verb-search-list ul {
+  overflow-y: scroll;
+  padding: 5px 15px;
+  background-color: lightgrey;
+}
+
+.App-verb-search-icon {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.App-verb-search-icon button {
+  color: #1976d2;
+}
+
+.App-verb-buttons {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 500px) {
+  .App-verb-buttons {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.App-verb-buttons button {
+  font-size: 14px;
+  min-width: unset;
+}
+
+.App-verb-block1 {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.App-verb-block1-button {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 40px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s 0s;
+  button {
+    word-break: keep-all;
+  }
+  &.front {
+    transform: rotateX(0deg);
+    button {
+      padding-top: 20px;
+    }
+  }
+  &.front.rotated {
+    transform: rotateX(180deg);
+  }
+  &.back {
+    transform: rotateX(-180deg);
+    button {
+      padding-top: 20px;
+    }
+  }
+  &.back.rotated {
+    transform: rotateX(0deg);
+  }
+}
+/*.App-verb-block1-button.front.rotated {
+  transform: rotateX(180deg);
+  button {
+    word-break: break-word;
+  }
+}
+.App-verb-block1-button.back.rotated {
+  transform: rotateX(0deg);
+  button {
+    word-break: break-word;
+  }
+}*/
+@media screen and (min-width: 600px) and (min-height: 300px) and (orientation: landscape) {
+  .App-verb-block1-button {
+    width: 70%;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 600px) and (min-height: 300px) and (orientation: portrait) {
+  .App-verb-block1-button {
+    width: 70%;
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 600px) and (min-height: 300px) {
+  .App-verb-block1-button {
+    width: 60%;
+    font-size: 60px;
+    &.front {
+      button {
+        padding-top: 25px;
+      }
+    }
+  }
+}
+@media screen and (orientation: landscape) {
+  .App-verb-block1-button {
+    width: 70%;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 500px) and (min-height: 300px) and (orientation: landscape) {
+  .App-verb-block1-button {
+    width: 50%;
+    font-size: 40px;
+    button {
+      padding: 30px !important;
+    }
+  }
+}
+@media screen and (min-width: 800px) and (min-height: 500px) {
+  .App-verb-block1-button {
+    width: 50%;
+    font-size: 60px;
+    button {
+      padding: 40px !important;
+    }
+  }
+}
+
+.App-verb-block1 button {
+  min-width: 100%;
+  font-size: inherit;
+  line-height: 1em;
+}
+
+.App-conjugation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex: 2 1 auto;
+}
+
+.App-conjugation-block1 {
+  margin: 0 10px 30px 10px;
+  padding: 15px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.App-conjugation-block2 {
+  margin: 0 0 10px 0;
+  display: flex;
+  //justify-content: space-around;
+  overflow-x: auto;
+}
+
+@media screen and (min-width: 300px) {
+  .App-conjugation-block2 {
+    gap: 10px;
+    //justify-content: center;
+  }
+  .App-conjugation-block2 button.MuiButton-text {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .App-conjugation-block2 {
+    justify-content: center;
+  }
+}
+.App-conjugation-block3 {
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.App-conjugation-block4 {
+  margin-bottom: 5px;
+}
+
+.App-footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  margin-top: auto;
+  &-author {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    position: relative;
+    left: 5px;
+  }
+  &-version {
+    align-items: flex-end;
+    position: relative;
+    right: 5px;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .App-footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) and (min-height: 300px) {
+  .App-verb-tooltip {
+    width: 50%;
+    line-height: 2rem;
+  }
+}
