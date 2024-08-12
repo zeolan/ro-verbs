@@ -1,4 +1,4 @@
-import config from "eslint-config-standard";
+//import config from "eslint-config-standard";
 import js from "@eslint/js";
 import globals from "globals";
 import typescriptEslintParser from "@typescript-eslint/parser";
