@@ -1,10 +1,10 @@
 //import config from "eslint-config-standard";
-import js from "@eslint/js";
+//import js from "@eslint/js";
 import globals from "globals";
 import typescriptEslintParser from "@typescript-eslint/parser";
 
 export default [
-  js.configs.recommended,
+  //js.configs.recommended,
 
   {
     ignores: [".config/*"],
