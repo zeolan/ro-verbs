@@ -1,0 +1,13 @@
+name: eslint-runner
+run-name: ${{ github.actor }} is running eslint
+# ^ we use github context to give an access to the username
+on: [push]
+jobs:
+  run-eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm eslint src/
