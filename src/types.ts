@@ -3,7 +3,7 @@ export interface IVerb {
   nameRo: [string, number];
   nameRu: string;
   conjugation: {
-    eu: string;
+    eu: [string, number];
     tu: string;
     el: string;
     noi: string;

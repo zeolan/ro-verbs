@@ -6,7 +6,7 @@ import { getMode } from "../store/reducer.ts";
 import { IVerb, Lang, Mode } from "../types.ts";
 
 interface SearchListParams {
-  searchResults: any[];
+  searchResults: IVerb[];
   searchLang: Lang;
   onItemClick: (item: IVerb) => void;
 }
@@ -32,7 +32,7 @@ const SearchList: React.FC<SearchListParams> = ({
           <ListItem
             style={{ cursor: "pointer" }}
             key={option.id}
-            value={option.nameRo}
+            value={option.nameRo[0]}
             disablePadding
             onClick={() => onListItemClick(option)}
           >

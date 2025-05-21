@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, JSX } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { IconButton } from "@mui/material";
 import { Search, Close } from "@mui/icons-material";
@@ -42,9 +42,11 @@ const Verb: React.FC = () => {
   const [searchLang, setSearchLang] = useState<Lang>(fromLang);
   const [searchString, setSearchString] = useState<string>("");
   const [showSearchInput, setShowSearchInput] = useState<boolean>(false);
-  const [searchResults, setSearchResults] = useState<any[]>([]);
+  const [searchResults, setSearchResults] = useState<IVerb[]>([]);
   const [localNameRu, setLocalNameRu] = useState<string>("");
-  const [localNameRo, setLocalNameRo] = useState<any>(null);
+  const [localNameRo, setLocalNameRo] = useState<string | JSX.Element | null>(
+    null
+  );
   const inputRef = useRef<HTMLInputElement>();
 
   useEffect(() => {
@@ -58,6 +60,7 @@ const Verb: React.FC = () => {
         lang !== fromLang ? 100 : 0
       );
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [verb, fromLang]);
 
   const translate = () => {
@@ -66,7 +69,7 @@ const Verb: React.FC = () => {
     lang === Lang.ro ? setLang(Lang.ru) : setLang(Lang.ro);
   };
 
-  const getNameRo = () => {
+  const getNameRo = (): string | JSX.Element | null => {
     if (
       typeof verb.nameRo === "object" &&
       verb !== null &&
@@ -92,7 +95,7 @@ const Verb: React.FC = () => {
       });
       return <>{result}</>;
     } else {
-      return verb.nameRo;
+      return "ERROR";
     }
   };
 
@@ -166,14 +169,14 @@ const Verb: React.FC = () => {
     inputRef && inputRef.current && inputRef.current.focus();
   };
 
-  const onSearchChange = (e: any) => {
+  const onSearchChange = (e: Event | React.SyntheticEvent) => {
     setSearchString(e.target.value);
     const searchString = e.target.value.trim();
     if (searchString.length > 1) {
-      const searchResultsRo = verbs.filter((item: any) =>
+      const searchResultsRo = verbs.filter((item: IVerb) =>
         item.nameRo[0].includes(searchString.toLowerCase())
       );
-      const searchResultsRu = verbs.filter((item: any) =>
+      const searchResultsRu = verbs.filter((item: IVerb) =>
         item.nameRu.includes(searchString.toLowerCase())
       );
       const searchResults = searchResultsRo.length
@@ -183,12 +186,12 @@ const Verb: React.FC = () => {
       setSearchLang(searchLang);
       setSearchResults(searchResults);
     } else if (searchString.length === 1) {
-      const searchResultsRo: any[] = [];
-      const searchResultsRu: any[] = [];
-      verbs.forEach((item: any) => {
+      const searchResultsRo: IVerb[] = [];
+      const searchResultsRu: IVerb[] = [];
+      verbs.forEach((item: IVerb) => {
         const regExp = new RegExp(`^${searchString.toLowerCase()}`);
         const matchesRo = item.nameRo[0].match(regExp);
-        if (!!matchesRo) {
+        if (matchesRo) {
           searchResultsRo.push(item);
         }
         const matchesRu = item.nameRu.match(regExp);
@@ -197,14 +200,14 @@ const Verb: React.FC = () => {
         }
       });
       const searchResults = searchResultsRo.length
-        ? searchResultsRo.sort((a: any, b: any) => {
+        ? searchResultsRo.sort((a: IVerb, b: IVerb) => {
             return a.nameRo[0] > b.nameRo[0]
               ? 1
               : a.nameRo[0] < b.nameRo[0]
               ? -1
               : 0;
           })
-        : searchResultsRu.sort((a: any, b: any) => {
+        : searchResultsRu.sort((a: IVerb, b: IVerb) => {
             return a.nameRu > b.nameRu ? 1 : a.nameRu < b.nameRu ? -1 : 0;
           });
       const searchLang = searchResultsRo.length ? Lang.ro : Lang.ru;

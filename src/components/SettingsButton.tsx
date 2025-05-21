@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { IconButton, Divider } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Check from "@mui/icons-material/Check";
-import SortByAlphaIcon from "@mui/icons-material/SortByAlpha";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
 import ClickAwayListener from "@mui/material/ClickAwayListener";

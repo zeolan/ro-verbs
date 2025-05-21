@@ -15,7 +15,7 @@ export const getRandomVerbsOrder = (numVerbs: number): number[] => {
 };
 
 export const getSortedVerbsOrder = (verbs: IVerb[]): number[] => {
-  const verbsCopy = structuredClone(verbs).sort((a: any, b: any) => {
+  const verbsCopy = structuredClone(verbs).sort((a: IVerb, b: IVerb) => {
     let nameA = a.nameRo[0];
     if (nameA.indexOf("(se) ") !== -1) {
       nameA = nameA.slice("(se) ".length);
@@ -30,10 +30,10 @@ export const getSortedVerbsOrder = (verbs: IVerb[]): number[] => {
     }
     return nameA > nameB ? 1 : nameA < nameB ? -1 : 0;
   });
-  return verbsCopy.map((verb: any) => verb.id);
+  return verbsCopy.map((verb: IVerb) => verb.id);
 };
 
-export const getVerbByIdx = (verbs: any[], idx: number): any => {
+export const getVerbByIdx = (verbs: IVerb[], idx: number): IVerb => {
   const foundVerb = verbs.find((verb) => verb.id === idx);
   return foundVerb;
 };

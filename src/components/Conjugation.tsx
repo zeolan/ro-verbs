@@ -43,7 +43,7 @@ const Conjugation: React.FC = () => {
   const verbsOrder = useSelector(getVerbsOrder);
   const dispatch = useDispatch();
 
-  const getNameRo = (nameRo: any) => {
+  const getNameRo = (nameRo: [string, number]) => {
     if (
       typeof nameRo === "object" &&
       nameRo[0] &&

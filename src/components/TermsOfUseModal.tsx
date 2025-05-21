@@ -6,7 +6,7 @@ import { Box, Button, Modal } from "@mui/material";
 import { getShowTermsOfUse, setShowTermsOfUse } from "../store/reducer.ts";
 
 const style = {
-  position: "absolute" as "absolute",
+  position: "absolute",
   bottom: "0",
   textAlign: "center",
   width: "100vw",
