@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { Box, Button, Modal } from "@mui/material";
@@ -16,7 +16,9 @@ const style = {
   p: 2,
 };
 
-const USER_MESSAGE = `This site collects anonymous statistics to improve application`;
+// const USER_MESSAGE = `This site collects anonymous statistics to improve application`;
+const USER_MESSAGE =
+  "Этот сайт собирает анонимную статистику для улучшения приложения";
 
 const TermsOfUseModal: React.FC = () => {
   const dispatch = useDispatch();
@@ -26,7 +28,7 @@ const TermsOfUseModal: React.FC = () => {
   };
 
   return (
-    <div>
+    <div data-testid="terms-of-use">
       <Modal
         open={isOpen}
         aria-labelledby="modal-modal-title"
@@ -38,6 +40,7 @@ const TermsOfUseModal: React.FC = () => {
             onClick={handleClick}
             variant="contained"
             sx={{ marginLeft: "30px" }}
+            data-testid="terms-of-use-agree-btn"
           >
             I agree
           </Button>

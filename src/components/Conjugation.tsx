@@ -14,7 +14,7 @@ import {
   setShowConjugation,
   getVerbsOrder,
 } from "../store/reducer.ts";
-import { getVerbByIdx } from "../utils.ts";
+import { getVerbByIdx } from "../utils/utils.ts";
 
 const personButtons = [
   <CapButton key="persona" variant="outlined">
@@ -51,7 +51,7 @@ const Conjugation: React.FC = () => {
       typeof nameRo[0] === "string" &&
       typeof nameRo[1] === "number"
     ) {
-      const name = (nameRo[0] as String).split("");
+      const name = (nameRo[0] as string).split("");
       let key = 1;
       const result = name.map((item: string) => {
         return key !== nameRo[1] ? (
@@ -150,7 +150,7 @@ const Conjugation: React.FC = () => {
 
   return (
     <div className="App-conjugation">
-      <StyledPaper elevation={0}>
+      <StyledPaper elevation={0} className="App-conjugation-block1">
         <span>a&nbsp;</span>
         {getNameRo(verb.nameRo)}
         <span>- {verb.nameRu}</span>
@@ -186,7 +186,7 @@ const Conjugation: React.FC = () => {
       </div>
       <div className="App-conjugation-block4">
         <Button variant={"contained"} onClick={onNextClick}>
-          Далі
+          Дальше
         </Button>
       </div>
     </div>

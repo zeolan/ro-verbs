@@ -569,7 +569,7 @@
   {
     "id": 25,
     "nameRo": ["număra", 6],
-    "nameRu": "считать",
+    "nameRu": "считать, подсчитывать, насчитывать",
     "conjugation": {
       "eu": ["număr", 2],
       "tu": "numeri",
@@ -592,7 +592,7 @@
   {
     "id": 26,
     "nameRo": ["privi", 5],
-    "nameRu": "смотреть",
+    "nameRu": "смотреть, набдюдать, разглядывать",
     "conjugation": {
       "eu": ["privesc", 5],
       "tu": "privești",
@@ -2339,8 +2339,8 @@
   },
   {
     "id": 102,
-    "nameRo": ["lovi", 4],
-    "nameRu": "бить, ударять",
+    "nameRo": ["(se) lovi", 9],
+    "nameRu": "бить(ся), ударять(ся)",
     "conjugation": {
       "eu": ["lovesc", 4],
       "tu": "lovești",
@@ -2707,8 +2707,8 @@
   },
   {
     "id": 118,
-    "nameRo": ["proteja", 7],
-    "nameRu": "охранять, защищать, беречь",
+    "nameRo": ["(se) proteja", 12],
+    "nameRu": "охранять, защищать(ся), беречь",
     "conjugation": {
       "eu": ["protejez", 7],
       "tu": "protejezi",
@@ -3007,7 +3007,7 @@
   {
     "id": 131,
     "nameRo": ["tăia", 4],
-    "nameRu": "резать, нарезать",
+    "nameRu": "резать, нарезать, рубить, урезать, вырезать",
     "conjugation": {
       "eu": ["tai", 2],
       "tu": "tai",
@@ -3259,7 +3259,7 @@
   },
   {
     "id": 142,
-    "nameRo": ["lupta", 5],
+    "nameRo": ["(se) lupta", 10],
     "nameRu": "сражаться, биться, воевать, бороться",
     "conjugation": {
       "eu": ["lupt", 2],
@@ -3467,7 +3467,7 @@
   {
     "id": 151,
     "nameRo": ["dovedi", 6],
-    "nameRu": "доказывать, подтверждать",
+    "nameRu": "доказывать, подтверждать, предоставить доказательства",
     "conjugation": {
       "eu": ["dovedesc", 6],
       "tu": "dovedești",
@@ -3489,7 +3489,7 @@
   },
   {
     "id": 152,
-    "nameRo": ["însemna", 7],
+    "nameRo": ["însemna (1)", 7],
     "nameRu": "значить, обозначать",
     "conjugation": {
       "eu": ["însemn", 4],
@@ -4892,7 +4892,7 @@
   {
     "id": 213,
     "nameRo": ["cultiva", 7],
-    "nameRu": "выращивать, растить",
+    "nameRu": "выращивать, растить, культивировать идею",
     "conjugation": {
       "eu": ["cultiv", 5],
       "tu": "cultivi",
@@ -5467,7 +5467,7 @@
   {
     "id": 238,
     "nameRo": ["(se) amesteca", 13],
-    "nameRu": "смешивать, перемешивать, (вмешиваться)",
+    "nameRu": "смешивать(ся), перемешивать(ся), вмешиваться",
     "conjugation": {
       "eu": ["amestec", 3],
       "tu": "amesteci",
@@ -5789,7 +5789,7 @@
   {
     "id": 252,
     "nameRo": ["umbla", 5],
-    "nameRu": "прогуливаться, гулять, бродить",
+    "nameRu": "ходить пешком, прогуливаться, гулять, бродить",
     "conjugation": {
       "eu": ["umblu", 1],
       "tu": "umbli",
@@ -5904,7 +5904,7 @@
   {
     "id": 257,
     "nameRo": ["căra", 4],
-    "nameRu": "переносить, перевозить (кого/что)",
+    "nameRu": "переносить, перевозить (кого/что), транспортировать",
     "conjugation": {
       "eu": ["car", 2],
       "tu": "cari",
@@ -5950,7 +5950,7 @@
   {
     "id": 259,
     "nameRo": ["cuceri", 6],
-    "nameRu": "завоевывать, занимать, забирать",
+    "nameRu": "завоевывать, покорять, занимать, забирать",
     "conjugation": {
       "eu": ["cuceresc", 6],
       "tu": "cucerești",
@@ -6042,7 +6042,7 @@
   {
     "id": 263,
     "nameRo": ["planta", 6],
-    "nameRu": "сажать, садить, закапывать",
+    "nameRu": "сажать, садить, высаживать; закапывать, вкапывать",
     "conjugation": {
       "eu": ["plantez", 6],
       "tu": "plantezi",
@@ -6272,7 +6272,7 @@
   {
     "id": 273,
     "nameRo": ["depăși", 6],
-    "nameRu": "превышать, превысить (предел, лимит, ...), опередить",
+    "nameRu": "превышать, превысить (предел, лимит, ...), опередить; превосходить",
     "conjugation": {
       "eu": ["depășesc", 6],
       "tu": "depășești",
@@ -6386,8 +6386,8 @@
   },
   {
     "id": 278,
-    "nameRo": ["dezamăgi", 8],
-    "nameRu": "разочаровать",
+    "nameRo": ["(se) dezamăgi", 13],
+    "nameRu": "разочаровать, разочаровывать(-ся)",
     "conjugation": {
       "eu": ["dezamăgesc", 8],
       "tu": "dezamăgești",
@@ -6410,7 +6410,7 @@
   {
     "id": 279,
     "nameRo": ["motiva", 6],
-    "nameRu": "мотивировать",
+    "nameRu": "обосновывать, давать объяснения, мотивировать",
     "conjugation": {
       "eu": ["motivez", 6],
       "tu": "motivezi",
@@ -6663,7 +6663,7 @@
   {
     "id": 290,
     "nameRo": ["circula", 7],
-    "nameRu": "циркулировать, двигаться",
+    "nameRu": "циркулировать, курсировать, двигаться",
     "conjugation": {
       "eu": ["circul", 2],
       "tu": "circuli",
@@ -6732,7 +6732,7 @@
   {
     "id": 293,
     "nameRo": ["(se) deplasa", 12],
-    "nameRu": "перемещать(ся)",
+    "nameRu": "перемещать(ся), передвигать(ся)",
     "conjugation": {
       "eu": ["deplasez", 7],
       "tu": "deplasezi",
@@ -6778,7 +6778,7 @@
   {
     "id": 295,
     "nameRo": ["lăsa", 4],
-    "nameRu": "позволять, разрешать, (от)пускать",
+    "nameRu": "позволять, разрешать; (от)пускать, оставлять, покидать; бросать, прекращать",
     "conjugation": {
       "eu": ["las", 2],
       "tu": "lași",
@@ -7031,7 +7031,7 @@
   {
     "id": 306,
     "nameRo": ["judeca", 6],
-    "nameRu": "судить, осуждать, высказывать мнение, суждение",
+    "nameRu": "судить, осуждать, высказывать мнение, суждение, рассматривать",
     "conjugation": {
       "eu": ["judec", 2],
       "tu": "judeci",
@@ -7099,8 +7099,8 @@
   },
   {
     "id": 309,
-    "nameRo": ["împărți", 7],
-    "nameRu": "делить(ся), разделять",
+    "nameRo": ["(se) împărți", 12],
+    "nameRu": "делить(ся), разделять(ся)",
     "conjugation": {
       "eu": ["împart", 4],
       "tu": "împarți",
@@ -7215,7 +7215,7 @@
   {
     "id": 314,
     "nameRo": ["provoca", 7],
-    "nameRu": "провоцировать",
+    "nameRu": "провоцировать, вызывать, приводить к",
     "conjugation": {
       "eu": ["provoc", 5],
       "tu": "provoci",
@@ -7583,7 +7583,7 @@
   {
     "id": 330,
     "nameRo": ["uda", 3],
-    "nameRu": "поливать, мочить",
+    "nameRu": "поливать, мочить, мокнуть",
     "conjugation": {
       "eu": ["ud", 1],
       "tu": "uzi",
@@ -8388,7 +8388,7 @@
   {
     "id": 365,
     "nameRo": ["pica", 4],
-    "nameRu": "свалиться, упасть с высоты",
+    "nameRu": "свалиться, упасть с высоты; провалить тест, экзамен, работу",
     "conjugation": {
       "eu": ["pic", 2],
       "tu": "pici",
@@ -8411,7 +8411,7 @@
   {
     "id": 366,
     "nameRo": ["(se) scutura", 12],
-    "nameRu": "трясти, трусить (трястись, отряхиваться)",
+    "nameRu": "трусить, вытрушивать, отряхивать(ся), трястись, стряхивать, скинуть что-то",
     "conjugation": {
       "eu": ["scutur", 3],
       "tu": "scuturi",
@@ -8729,5 +8729,1245 @@
     "participle": "dobândit",
     "impS": "dobândește",
     "impP": "dobândiți"
+  },
+  {
+    "id": 380,
+    "nameRo": ["(se) înclina", 12],
+    "nameRu": "наклонять(ся), склониться, поклоняться",
+    "conjugation": {
+      "eu": ["înclin", 5],
+      "tu": "înclini",
+      "el": "înclină",
+      "noi": "înclinăm",
+      "voi": "înclinați",
+      "ei": "înclină",
+
+      "eu1": "înclin",
+      "tu1": "înclini",
+      "el1": "încline",
+      "noi1": "înclinam",
+      "voi1": "înclinați",
+      "ei1": "încline"
+    },
+    "participle": "înclinat",
+    "impS": "înclină",
+    "impP": "înclinați"
+  },
+  {
+    "id": 381,
+    "nameRo": ["situa", 5],
+    "nameRu": "находиться в, занимать (определенное место)",
+    "conjugation": {
+      "eu": ["situez", 5],
+      "tu": "situezi",
+      "el": "situează",
+      "noi": "situăm",
+      "voi": "situați",
+      "ei": "situează",
+
+      "eu1": "situez",
+      "tu1": "situezi",
+      "el1": "situeze",
+      "noi1": "situăm",
+      "voi1": "situați",
+      "ei1": "situeze"
+    },
+    "participle": "situat",
+    "impS": "situează",
+    "impP": "situați"
+  },
+  {
+    "id": 382,
+    "nameRo": ["proiecta", 8],
+    "nameRu": "проектировать, делать проект; опрокидывать, бросать)",
+    "conjugation": {
+      "eu": ["proiectez", 8],
+      "tu": "proiectezi",
+      "el": "proiectează",
+      "noi": "proiectăm",
+      "voi": "proiectați",
+      "ei": "proiectează",
+
+      "eu1": "proiectez",
+      "tu1": "proiectezi",
+      "el1": "proiecteze",
+      "noi1": "proiectăm",
+      "voi1": "proiectați",
+      "ei1": "proiecteze"
+    },
+    "participle": "proiectat",
+    "impS": "proiectează",
+    "impP": "proiectați"
+  },
+  {
+    "id": 383,
+    "nameRo": ["(se) apuca", 10],
+    "nameRu": "хватать(ся), схватить(ся), брать(ся)",
+    "conjugation": {
+      "eu": ["apuc", 3],
+      "tu": "apuci",
+      "el": "apucă",
+      "noi": "apucăm",
+      "voi": "apucați",
+      "ei": "apucă",
+
+      "eu1": "apuc",
+      "tu1": "apuci",
+      "el1": "apuce",
+      "noi1": "apucăm",
+      "voi1": "apucați",
+      "ei1": "apuce"
+    },
+    "participle": "apucat",
+    "impS": "apucă",
+    "impP": "apucați"
+  },
+  {
+    "id": 384,
+    "nameRo": ["colora", 6],
+    "nameRu": "красить, раскрашивать, приукрашивать",
+    "conjugation": {
+      "eu": ["colorez", 6],
+      "tu": "colorezi",
+      "el": "colorează",
+      "noi": "colorăm",
+      "voi": "colorați",
+      "ei": "colorează",
+
+      "eu1": "colorez",
+      "tu1": "colorezi",
+      "el1": "coloreze",
+      "noi1": "colorăm",
+      "voi1": "colorați",
+      "ei1": "coloreze"
+    },
+    "participle": "colorat",
+    "impS": "colorează",
+    "impP": "colorați"
+  },
+  {
+    "id": 385,
+    "nameRo": ["doborî", 6],
+    "nameRu": "сбить, подбить, повалить, свалить; побить рекорд",
+    "conjugation": {
+      "eu": ["dobor", 4],
+      "tu": "dobori",
+      "el": "doboară",
+      "noi": "doborâm",
+      "voi": "doborâți",
+      "ei": "doboară",
+
+      "eu1": "dobor",
+      "tu1": "dobori",
+      "el1": "doboare",
+      "noi1": "doborâm",
+      "voi1": "doborâți",
+      "ei1": "doboare"
+    },
+    "participle": "doborât",
+    "impS": "doboară",
+    "impP": "doborâți"
+  },
+  {
+    "id": 386,
+    "nameRo": ["intenționa", 10],
+    "nameRu": "намереваться, планировать, собираться, хотеть",
+    "conjugation": {
+      "eu": ["intenționez", 10],
+      "tu": "intenționezi",
+      "el": "intenționează",
+      "noi": "intenționăm",
+      "voi": "intenționați",
+      "ei": "intenționează",
+
+      "eu1": "intenționez",
+      "tu1": "intenționezi",
+      "el1": "intenționeze",
+      "noi1": "intenționăm",
+      "voi1": "intenționați",
+      "ei1": "intenționeze"
+    },
+    "participle": "intenționat",
+    "impS": "intenționează",
+    "impP": "intenționați"
+  },
+  {
+    "id": 387,
+    "nameRo": ["inhala", 6],
+    "nameRu": "вдыхать (газ, пар, ...)",
+    "conjugation": {
+      "eu": ["inhalez", 6],
+      "tu": "inhalezi",
+      "el": "inhalează",
+      "noi": "inhalăm",
+      "voi": "inhalați",
+      "ei": "inhalează",
+
+      "eu1": "inhalez",
+      "tu1": "inhalezi",
+      "el1": "inhaleze",
+      "noi1": "inhalăm",
+      "voi1": "inhalați",
+      "ei1": "inhaleze"
+    },
+    "participle": "inhalat",
+    "impS": "inhalează",
+    "impP": "inhalați"
+  },
+  {
+    "id": 388,
+    "nameRo": ["economisi", 9],
+    "nameRu": "экономить",
+    "conjugation": {
+      "eu": ["economisesc", 9],
+      "tu": "economisești",
+      "el": "economisește",
+      "noi": "economisim",
+      "voi": "economisiți",
+      "ei": "economisesc",
+
+      "eu1": "economisesc",
+      "tu1": "economisești",
+      "el1": "economisească",
+      "noi1": "economisim",
+      "voi1": "economisiți",
+      "ei1": "economisească"
+    },
+    "participle": "economisit",
+    "impS": "economisește",
+    "impP": "economisiți"
+  },
+  {
+    "id": 389,
+    "nameRo": ["însoți", 6],
+    "nameRu": "сопровождать (кого-то)",
+    "conjugation": {
+      "eu": ["însoțesc", 6],
+      "tu": "însoțești",
+      "el": "însoțește",
+      "noi": "însoțim",
+      "voi": "însoțiți",
+      "ei": "însoțesc",
+
+      "eu1": "însoțesc",
+      "tu1": "însoțești",
+      "el1": "însoțească",
+      "noi1": "însoțim",
+      "voi1": "însoțiți",
+      "ei1": "însoțească"
+    },
+    "participle": "însoțit",
+    "impS": "însoțește",
+    "impP": "însoțiți"
+  },
+  {
+    "id": 390,
+    "nameRo": ["cântări", 7],
+    "nameRu": "взвешивать",
+    "conjugation": {
+      "eu": ["cântăresc", 7],
+      "tu": "cântărești",
+      "el": "cântărește",
+      "noi": "cântărim",
+      "voi": "cântăriți",
+      "ei": "cântăresc",
+
+      "eu1": "cântăresc",
+      "tu1": "cântărești",
+      "el1": "cântărească",
+      "noi1": "cântărim",
+      "voi1": "cântăriți",
+      "ei1": "cântărească"
+    },
+    "participle": "cântărit",
+    "impS": "cântărește",
+    "impP": "cântăriți"
+  },
+  {
+    "id": 391,
+    "nameRo": ["scurta", 6],
+    "nameRu": "укорачивать, обрезать, сокращать путь(срезать)",
+    "conjugation": {
+      "eu": ["scurtez", 6],
+      "tu": "scurtezi",
+      "el": "scurtează",
+      "noi": "scurtăm",
+      "voi": "scurtați",
+      "ei": "scurtează",
+
+      "eu1": "scurtez",
+      "tu1": "scurtezi",
+      "el1": "scurteze",
+      "noi1": "scurtăm",
+      "voi1": "scurtați",
+      "ei1": "scurteze"
+    },
+    "participle": "scurtat",
+    "impS": "scurtează",
+    "impP": "scurtați"
+  },
+  {
+    "id": 392,
+    "nameRo": ["îndeplini", 9],
+    "nameRu": "выполнить, исполнить, реализовать",
+    "conjugation": {
+      "eu": ["îndeplinesc", 9],
+      "tu": "îndeplinești",
+      "el": "îndeplinește",
+      "noi": "îndeplinim",
+      "voi": "îndepliniți",
+      "ei": "îndeplinesc",
+
+      "eu1": "îndeplinesc",
+      "tu1": "îndeplinești",
+      "el1": "îndeplinească",
+      "noi1": "îndeplinim",
+      "voi1": "îndepliniți",
+      "ei1": "îndeplinească"
+    },
+    "participle": "îndeplinit",
+    "impS": "îndeplinește",
+    "impP": "îndepliniți"
+  },
+  {
+    "id": 393,
+    "nameRo": ["uni", 3],
+    "nameRu": "соединять, объединять в целое",
+    "conjugation": {
+      "eu": ["unesc", 3],
+      "tu": "unești",
+      "el": "unește",
+      "noi": "unim",
+      "voi": "uniți",
+      "ei": "unesc",
+
+      "eu1": "unesc",
+      "tu1": "unești",
+      "el1": "unească",
+      "noi1": "unim",
+      "voi1": "uniți",
+      "ei1": "unească"
+    },
+    "participle": "unit",
+    "impS": "unește",
+    "impP": "uniți"
+  },
+  {
+    "id": 394,
+    "nameRo": ["(se) uimi", 9],
+    "nameRu": "удивлять(ся), поражать, впечатлять",
+    "conjugation": {
+      "eu": ["uimesc", 3],
+      "tu": "uimești",
+      "el": "uimește",
+      "noi": "uimim",
+      "voi": "uimiți",
+      "ei": "uimesc",
+
+      "eu1": "uimesc",
+      "tu1": "uimești",
+      "el1": "uimească",
+      "noi1": "uimim",
+      "voi1": "uimiți",
+      "ei1": "uimească"
+    },
+    "participle": "uimit",
+    "impS": "uimește",
+    "impP": "uimiți"
+  },
+  {
+    "id": 395,
+    "nameRo": ["rosti", 5],
+    "nameRu": "произносить",
+    "conjugation": {
+      "eu": ["rostesc", 3],
+      "tu": "rostești",
+      "el": "rostește",
+      "noi": "rostim",
+      "voi": "rostiți",
+      "ei": "rostesc",
+
+      "eu1": "rostesc",
+      "tu1": "rostești",
+      "el1": "rostească",
+      "noi1": "rostim",
+      "voi1": "rostiți",
+      "ei1": "rostească"
+    },
+    "participle": "rostit",
+    "impS": "rostește",
+    "impP": "rostiți"
+  },
+  {
+    "id": 396,
+    "nameRo": ["sforăi", 6],
+    "nameRu": "храпеть",
+    "conjugation": {
+      "eu": ["sforăi", 3],
+      "tu": "sforăi",
+      "el": "sforăie",
+      "noi": "sforăim",
+      "voi": "sforăiți",
+      "ei": "sforăie",
+
+      "eu1": "sforăi",
+      "tu1": "sforăi",
+      "el1": "sforăie",
+      "noi1": "sforăim",
+      "voi1": "sforăiți",
+      "ei1": "sforăie"
+    },
+    "participle": "sforăit",
+    "impS": "sforăie",
+    "impP": "sforăiți"
+  },
+  {
+    "id": 397,
+    "nameRo": ["(se) zgudui", 11],
+    "nameRu": "трясти, встряхивать(ся), трусить(ся), потрясать",
+    "conjugation": {
+      "eu": ["zgudui", 3],
+      "tu": "zgudui",
+      "el": "zguduie",
+      "noi": "zguduim",
+      "voi": "zguduiți",
+      "ei": "zguduie",
+
+      "eu1": "zgudui",
+      "tu1": "zgudui",
+      "el1": "zguduie",
+      "noi1": "zguduim",
+      "voi1": "zguduiți",
+      "ei1": "zguduie"
+    },
+    "participle": "zguduit",
+    "impS": "zguduie",
+    "impP": "zguduiți"
+  },
+  {
+    "id": 398,
+    "nameRo": ["izbuti", 6],
+    "nameRu": "преуспеть, добиться успеха, хорошо закончить начатое",
+    "conjugation": {
+      "eu": ["izbutesc", 6],
+      "tu": "izbutești",
+      "el": "izbutește",
+      "noi": "izbutim",
+      "voi": "izbutiți",
+      "ei": "izbutesc",
+
+      "eu1": "izbutesc",
+      "tu1": "izbutești",
+      "el1": "izbutească",
+      "noi1": "izbutim",
+      "voi1": "izbutiți",
+      "ei1": "izbutească"
+    },
+    "participle": "izbutit",
+    "impS": "izbutește",
+    "impP": "izbutiți"
+  },
+  {
+    "id": 399,
+    "nameRo": ["respinge", 5],
+    "nameRu": "отклонять, отказывать, не принимать",
+    "conjugation": {
+      "eu": ["resping", 5],
+      "tu": "respingi",
+      "el": "respinge",
+      "noi": "respingem",
+      "voi": "respingeți",
+      "ei": "resping",
+
+      "eu1": "resping",
+      "tu1": "respingi",
+      "el1": "respingă",
+      "noi1": "respingem",
+      "voi1": "respingeți",
+      "ei1": "respingă"
+    },
+    "participle": "respins",
+    "impS": "respinge",
+    "impP": "respingeți"
+  },
+  {
+    "id": 400,
+    "nameRo": ["(se) mărturisi", 14],
+    "nameRu": "признавать(ся), заявлять, декларировать, говорить открыто(правду)",
+    "conjugation": {
+      "eu": ["mărturisesc", 6],
+      "tu": "mărturisești",
+      "el": "mărturisește",
+      "noi": "mărturisim",
+      "voi": "mărturisiți",
+      "ei": "mărturisesc",
+
+      "eu1": "mărturisesc",
+      "tu1": "mărturisești",
+      "el1": "mărturisească",
+      "noi1": "mărturisim",
+      "voi1": "mărturisiți",
+      "ei1": "mărturisească"
+    },
+    "participle": "mărturisit",
+    "impS": "mărturisește",
+    "impP": "mărturisiți"
+  },
+  {
+    "id": 401,
+    "nameRo": ["pocni", 5],
+    "nameRu": "щелкать, стучать, постукивать",
+    "conjugation": {
+      "eu": ["pocnesc", 5],
+      "tu": "pocnești",
+      "el": "pocnește",
+      "noi": "pocnim",
+      "voi": "pocniți",
+      "ei": "pocnesc",
+
+      "eu1": "pocnesc",
+      "tu1": "pocnești",
+      "el1": "pocnească",
+      "noi1": "pocnim",
+      "voi1": "pocniți",
+      "ei1": "pocnească"
+    },
+    "participle": "pocnit",
+    "impS": "pocnește",
+    "impP": "pocniți"
+  },
+  {
+    "id": 402,
+    "nameRo": ["preveni", 7],
+    "nameRu": "предупреждать, предотвращать",
+    "conjugation": {
+      "eu": ["previn", 5],
+      "tu": "previi",
+      "el": "previne",
+      "noi": "prevenim",
+      "voi": "preveniți",
+      "ei": "previn",
+
+      "eu1": "previn",
+      "tu1": "previi",
+      "el1": "prevină",
+      "noi1": "prevenim",
+      "voi1": "preveniți",
+      "ei1": "prevină"
+    },
+    "participle": "prevenit",
+    "impS": "prevină, previn",
+    "impP": "preveniți"
+  },
+  {
+    "id": 403,
+    "nameRo": ["concepe", 5],
+    "nameRu": "задумывать, замысливать, проектировать, разрабатывать что-то",
+    "conjugation": {
+      "eu": ["concep", 5],
+      "tu": "concepi",
+      "el": "concepe",
+      "noi": "concepem",
+      "voi": "concepeți",
+      "ei": "concep",
+
+      "eu1": "concep",
+      "tu1": "concepi",
+      "el1": "conceapă",
+      "noi1": "concepem",
+      "voi1": "concepeți",
+      "ei1": "conceapă"
+    },
+    "participle": "conceput",
+    "impS": "concepe",
+    "impP": "concepeți"
+  },
+  {
+    "id": 404,
+    "nameRo": ["trăda", 5],
+    "nameRu": "предавать; не функционировать как нужно, подводить (например память)",
+    "conjugation": {
+      "eu": ["trădez", 5],
+      "tu": "trădezi",
+      "el": "trădează",
+      "noi": "trădăm",
+      "voi": "trădați",
+      "ei": "trădează",
+
+      "eu1": "trădez",
+      "tu1": "trădezi",
+      "el1": "trădeze",
+      "noi1": "trădăm",
+      "voi1": "trădați",
+      "ei1": "trădeze"
+    },
+    "participle": "trădat",
+    "impS": "trădează",
+    "impP": "trădați"
+  },
+  {
+    "id": 405,
+    "nameRo": ["(se) dedica", 11],
+    "nameRu": "посвящать что-то кому-то (напр. стих); отдаваться, посвящать себя какому-то делу, идее",
+    "conjugation": {
+      "eu": ["dedic", 4],
+      "tu": "dedici",
+      "el": "dedică",
+      "noi": "dedicăm",
+      "voi": "dedicați",
+      "ei": "dedică",
+
+      "eu1": "dedic",
+      "tu1": "dedici",
+      "el1": "dedice",
+      "noi1": "dedicăm",
+      "voi1": "dedicați",
+      "ei1": "dedice"
+    },
+    "participle": "dedicat",
+    "impS": "dedică",
+    "impP": "dedicați"
+  },
+  {
+    "id": 406,
+    "nameRo": ["îmbolnăvi", 9],
+    "nameRu": "заболевать, становиться больным",
+    "conjugation": {
+      "eu": ["îmbolnăvesc", 9],
+      "tu": "îmbolnăvești",
+      "el": "îmbolnăvește",
+      "noi": "îmbolnăvim",
+      "voi": "îmbolnăviți",
+      "ei": "îmbolnăvesc",
+
+      "eu1": "îmbolnăvesc",
+      "tu1": "îmbolnăvești",
+      "el1": "îmbolnăvească",
+      "noi1": "îmbolnăvim",
+      "voi1": "îmbolnăviți",
+      "ei1": "îmbolnăvească"
+    },
+    "participle": "îmbolnăvit",
+    "impS": "îmbolnăvește",
+    "impP": "îmbolnăviți"
+  },
+  {
+    "id": 407,
+    "nameRo": ["adera (la)", 5],
+    "nameRu": "присоединяться, вступать",
+    "conjugation": {
+      "eu": ["ader", 3],
+      "tu": "aderi",
+      "el": "aderă",
+      "noi": "aderăm",
+      "voi": "aderați",
+      "ei": "aderă",
+
+      "eu1": "ader",
+      "tu1": "aderi",
+      "el1": "adere",
+      "noi1": "aderăm",
+      "voi1": "aderați",
+      "ei1": "adere"
+    },
+    "participle": "aderat",
+    "impS": "aderă",
+    "impP": "aderați"
+  },
+  {
+    "id": 408,
+    "nameRo": ["răcni", 5],
+    "nameRu": "реветь (животные), громко протяжно кричать",
+    "conjugation": {
+      "eu": ["răcnesc", 5],
+      "tu": "răcnești",
+      "el": "răcnește",
+      "noi": "răcnim",
+      "voi": "răcniți",
+      "ei": "răcnesc",
+
+      "eu1": "răcnesc",
+      "tu1": "răcnești",
+      "el1": "răcnească",
+      "noi1": "răcnim",
+      "voi1": "răcniți",
+      "ei1": "răcnească"
+    },
+    "participle": "răcnit",
+    "impS": "răcnește",
+    "impP": "răcniți"
+  },
+  {
+    "id": 409,
+    "nameRo": ["dezvălui", 8],
+    "nameRu": "разоблачать, раскрывать, сделать тайное явным; раскрываться, раскрыться, выйти из тени",
+    "conjugation": {
+      "eu": ["dezvălui", 5],
+      "tu": "dezvălui",
+      "el": "dezvăluie",
+      "noi": "dezvăluim",
+      "voi": "dezvăluiți",
+      "ei": "dezvăluie",
+
+      "eu1": "dezvălui",
+      "tu1": "dezvălui",
+      "el1": "dezvăluie",
+      "noi1": "dezvăluim",
+      "voi1": "dezvăluiți",
+      "ei1": "dezvăluie"
+    },
+    "participle": "dezvăluit",
+    "impS": "dezvăluie",
+    "impP": "dezvăluiți"
+  },
+  {
+    "id": 410,
+    "nameRo": ["alunga", 6],
+    "nameRu": "выгонять, прогонять, изгонять, гонять; гоняться (рефл.)",
+    "conjugation": {
+      "eu": ["alung", 3],
+      "tu": "alungi",
+      "el": "alungă",
+      "noi": "alungăm",
+      "voi": "alungați",
+      "ei": "alungă",
+
+      "eu1": "alung",
+      "tu1": "alungi",
+      "el1": "alunge",
+      "noi1": "alungăm",
+      "voi1": "alungați",
+      "ei1": "alunge"
+    },
+    "participle": "alungat",
+    "impS": "alungă",
+    "impP": "alungați"
+  },
+  {
+    "id": 411,
+    "nameRo": ["blestema", 8],
+    "nameRu": "проклинать, говорить проклятья в чью-то сторону",
+    "conjugation": {
+      "eu": ["blestem", 6],
+      "tu": "blestemi",
+      "el": "blestemă",
+      "noi": "blestemăm",
+      "voi": "blestemați",
+      "ei": "blestemă",
+
+      "eu1": "blestem",
+      "tu1": "blestemi",
+      "el1": "blesteme",
+      "noi1": "blestemăm",
+      "voi1": "blestemați",
+      "ei1": "blesteme"
+    },
+    "participle": "blestemat",
+    "impS": "blestemă",
+    "impP": "blestemați"
+  },
+  {
+    "id": 412,
+    "nameRo": ["educa", 5],
+    "nameRu": "обучать, воспитывать, образовывать кого-то",
+    "conjugation": {
+      "eu": ["educ", 3],
+      "tu": "educi",
+      "el": "educă",
+      "noi": "educăm",
+      "voi": "educați",
+      "ei": "educă",
+
+      "eu1": "educ",
+      "tu1": "educi",
+      "el1": "educe",
+      "noi1": "educăm",
+      "voi1": "educați",
+      "ei1": "educe"
+    },
+    "participle": "educat",
+    "impS": "educă",
+    "impP": "educați"
+  },
+  {
+    "id": 413,
+    "nameRo": ["opune", 3],
+    "nameRu": "возражать, противопоставлять",
+    "conjugation": {
+      "eu": ["opun", 3],
+      "tu": "opui",
+      "el": "opune",
+      "noi": "opunem",
+      "voi": "opuneți",
+      "ei": "opun",
+
+      "eu1": "opun",
+      "tu1": "opui",
+      "el1": "opună",
+      "noi1": "opunem",
+      "voi1": "opuneți",
+      "ei1": "opună"
+    },
+    "participle": "opus",
+    "impS": "opune",
+    "impP": "opuneți"
+  },
+  {
+    "id": 414,
+    "nameRo": ["(se) ciocni", 11],
+    "nameRu": "ударить(ся), стукнуть(ся), разбить(ся), столкнуться, врезаться, чокаться",
+    "conjugation": {
+      "eu": ["ciocnesc", 6],
+      "tu": "ciocnești",
+      "el": "ciocnește",
+      "noi": "ciocnim",
+      "voi": "ciocniți",
+      "ei": "ciocnesc",
+
+      "eu1": "ciocnesc",
+      "tu1": "ciocnești",
+      "el1": "ciocnească",
+      "noi1": "ciocnim",
+      "voi1": "ciocniți",
+      "ei1": "ciocnească"
+    },
+    "participle": "ciocnit",
+    "impS": "ciocnește",
+    "impP": "ciocniți"
+  },
+  {
+    "id": 415,
+    "nameRo": ["(se) smuci", 10],
+    "nameRu": "дергать(ся), выдергивать, выдернуть",
+    "conjugation": {
+      "eu": ["smucesc", 5],
+      "tu": "smucești",
+      "el": "smucește",
+      "noi": "smucim",
+      "voi": "smuciți",
+      "ei": "smucesc",
+
+      "eu1": "smucesc",
+      "tu1": "smucești",
+      "el1": "smucească",
+      "noi1": "smucim",
+      "voi1": "smuciți",
+      "ei1": "smucească"
+    },
+    "participle": "smucit",
+    "impS": "smucește",
+    "impP": "smuciți"
+  },
+  {
+    "id": 416,
+    "nameRo": ["avertiza", 8],
+    "nameRu": "предупреждать",
+    "conjugation": {
+      "eu": ["avertizez", 8],
+      "tu": "avertizezi",
+      "el": "avertizează",
+      "noi": "avertizăm",
+      "voi": "avertizați",
+      "ei": "avertizează",
+
+      "eu1": "avertizez",
+      "tu1": "avertizezi",
+      "el1": "avertizeze",
+      "noi1": "avertizăm",
+      "voi1": "avertizați",
+      "ei1": "avertizeze"
+    },
+    "participle": "avertizat",
+    "impS": "avertizează",
+    "impP": "avertizați"
+  },
+  {
+    "id": 417,
+    "nameRo": ["viza", 4],
+    "nameRu": "визировать, подтверждать, заверять; целиться, направлять оружие, относиться к ч.либо, намекать на ч.либо, иметь целью",
+    "conjugation": {
+      "eu": ["vizez", 6],
+      "tu": "vizezi",
+      "el": "vizează",
+      "noi": "vizăm",
+      "voi": "vizați",
+      "ei": "vizează",
+
+      "eu1": "vizez",
+      "tu1": "vizezi",
+      "el1": "vizeze",
+      "noi1": "vizăm",
+      "voi1": "vizați",
+      "ei1": "vizeze"
+    },
+    "participle": "vizat",
+    "impS": "vizează",
+    "impP": "vizați"
+  },
+  {
+    "id": 418,
+    "nameRo": ["(se) plasa", 10],
+    "nameRu": "размещать, размещаться",
+    "conjugation": {
+      "eu": ["plasez", 5],
+      "tu": "plasezi",
+      "el": "plasează",
+      "noi": "plasăm",
+      "voi": "plasați",
+      "ei": "plasează",
+
+      "eu1": "plasez",
+      "tu1": "plasezi",
+      "el1": "plaseze",
+      "noi1": "plasăm",
+      "voi1": "plasați",
+      "ei1": "plaseze"
+    },
+    "participle": "plasat",
+    "impS": "plasează",
+    "impP": "plasați"
+  },
+  {
+    "id": 419,
+    "nameRo": ["dezice", 4],
+    "nameRu": "отрекаться, отказаться от своих слов",
+    "conjugation": {
+      "eu": ["dezic", 4],
+      "tu": "dezici",
+      "el": "dezice",
+      "noi": "dezicem",
+      "voi": "deziceți",
+      "ei": "dezic",
+
+      "eu1": "dezic",
+      "tu1": "dezic",
+      "el1": "dezică",
+      "noi1": "dezicem",
+      "voi1": "deziceți",
+      "ei1": "dezică"
+    },
+    "participle": "dezis",
+    "impS": "dezi, dezice",
+    "impP": "deziceți"
+  },
+  {
+    "id": 420,
+    "nameRo": ["(se) îmbuna", 11],
+    "nameRu": "улучшать(-ся)",
+    "conjugation": {
+      "eu": ["îmbunez", 6],
+      "tu": "îmbunezi",
+      "el": "îmbunează",
+      "noi": "îmbunăm",
+      "voi": "îmbunați",
+      "ei": "îmbunează",
+
+      "eu1": "îmbunez",
+      "tu1": "îmbunezi",
+      "el1": "îmbuneze",
+      "noi1": "îmbunăm",
+      "voi1": "îmbunați",
+      "ei1": "îmbuneze"
+    },
+    "participle": "îmbunat",
+    "impS": "îmbunează",
+    "impP": "îmbunați"
+  },
+  {
+    "id": 421,
+    "nameRo": ["prelua", 6],
+    "nameRu": "брать, принимать на себя; перенимать",
+    "conjugation": {
+      "eu": ["preiau", 5],
+      "tu": "preiei",
+      "el": "preia",
+      "noi": "preluăm",
+      "voi": "preluați",
+      "ei": "preiau",
+
+      "eu1": "preiau",
+      "tu1": "preiei",
+      "el1": "preia",
+      "noi1": "preluăm",
+      "voi1": "preluați",
+      "ei1": "preia"
+    },
+    "participle": "preluat",
+    "impS": "preia",
+    "impP": "preluați"
+  },
+  {
+    "id": 422,
+    "nameRo": ["împune", 4],
+    "nameRu": "навязывать, принуждать, заставлять",
+    "conjugation": {
+      "eu": ["împun", 4],
+      "tu": "împui",
+      "el": "împune",
+      "noi": "împunem",
+      "voi": "împuneți",
+      "ei": "împun",
+
+      "eu1": "împun",
+      "tu1": "împui",
+      "el1": "împună",
+      "noi1": "împunem",
+      "voi1": "împuneți",
+      "ei1": "împună"
+    },
+    "participle": "împus",
+    "impS": "împune",
+    "impP": "împuneți"
+  },
+  {
+    "id": 423,
+    "nameRo": ["depune", 4],
+    "nameRu": "подавать, вкладывать, размещать, вносить (деньги, средства), прилагать (усилия)",
+    "conjugation": {
+      "eu": ["depun", 4],
+      "tu": "depui",
+      "el": "depune",
+      "noi": "depunem",
+      "voi": "depuneți",
+      "ei": "depun",
+
+      "eu1": "depun",
+      "tu1": "depui",
+      "el1": "depună",
+      "noi1": "depunem",
+      "voi1": "depuneți",
+      "ei1": "depună"
+    },
+    "participle": "depus",
+    "impS": "depune",
+    "impP": "depuneți"
+  },
+  {
+    "id": 424,
+    "nameRo": ["anticipa", 8],
+    "nameRu": "предвидеть, прогнозировать, предугадывать",
+    "conjugation": {
+      "eu": ["anticipez", 8],
+      "tu": "anticipezi",
+      "el": "anticipează",
+      "noi": "anticipăm",
+      "voi": "anticipați",
+      "ei": "anticipează",
+
+      "eu1": "anticipez",
+      "tu1": "anticipezi",
+      "el1": "anticipeze",
+      "noi1": "anticipăm",
+      "voi1": "anticipați",
+      "ei1": "anticipeze"
+    },
+    "participle": "anticipat",
+    "impS": "anticipează",
+    "impP": "anticipați"
+  },
+  {
+    "id": 425,
+    "nameRo": ["(se) rătăci", 11],
+    "nameRu": "теряться(-ся), заблудиться",
+    "conjugation": {
+      "eu": ["rătăcesc", 6],
+      "tu": "rătăcești",
+      "el": "rătăcește",
+      "noi": "rătăcim",
+      "voi": "rătăciți",
+      "ei": "rătăcesc",
+
+      "eu1": "rătăcesc",
+      "tu1": "rătăcești",
+      "el1": "rătăcească",
+      "noi1": "rătăcim",
+      "voi1": "rătăciți",
+      "ei1": "rătăcească"
+    },
+    "participle": "rătăcit",
+    "impS": "rătăcește",
+    "impP": "rătăciți"
+  },
+  {
+    "id": 426,
+    "nameRo": ["însemna (2)", 7],
+    "nameRu": "помечать, отмечать",
+    "conjugation": {
+      "eu": ["însemnez", 5],
+      "tu": "însemnezi",
+      "el": "însemnează",
+      "noi": "însemnăm",
+      "voi": "însemnați",
+      "ei": "însemnează",
+
+      "eu1": "însemnez",
+      "tu1": "însemnezi",
+      "el1": "însemneze",
+      "noi1": "însemnăm",
+      "voi1": "însemnați",
+      "ei1": "însemneze"
+    },
+    "participle": "însemnat",
+    "impS": "însemnează",
+    "impP": "însemnați"
+  },
+  {
+    "id": 427,
+    "nameRo": ["părăsi", 6],
+    "nameRu": "покидать, бросать кого-то, что-то, отказываться от чего-то",
+    "conjugation": {
+      "eu": ["părăsesc", 6],
+      "tu": "părăsești",
+      "el": "părăsește",
+      "noi": "părăsim",
+      "voi": "părăsiți",
+      "ei": "părăsesc",
+
+      "eu1": "părăsesc",
+      "tu1": "părăsești",
+      "el1": "părăsească",
+      "noi1": "părăsim",
+      "voi1": "părăsiți",
+      "ei1": "părăsească"
+    },
+    "participle": "părăsit",
+    "impS": "părăsește",
+    "impP": "părăsiți"
+  },
+  {
+    "id": 428,
+    "nameRo": ["favoriza", 8],
+    "nameRu": "благоприятствовать, способствовать",
+    "conjugation": {
+      "eu": ["favorizez", 8],
+      "tu": "favorizezi",
+      "el": "favorizează",
+      "noi": "favorizăm",
+      "voi": "favorizați",
+      "ei": "favorizează",
+
+      "eu1": "favorizez",
+      "tu1": "favorizezi",
+      "el1": "favorizeze",
+      "noi1": "favorizăm",
+      "voi1": "favorizați",
+      "ei1": "favorizeze"
+    },
+    "participle": "favorizat",
+    "impS": "favorizează",
+    "impP": "favorizați"
+  },
+  {
+    "id": 429,
+    "nameRo": ["(se) pipăi", 10],
+    "nameRu": "трогать, касаться, щупать, ощупывать",
+    "conjugation": {
+      "eu": ["pipăi", 2],
+      "tu": "pipăi",
+      "el": "pipăie",
+      "noi": "pipăim",
+      "voi": "pipăiți",
+      "ei": "pipăie",
+
+      "eu1": "pipăi",
+      "tu1": "pipăi",
+      "el1": "pipăie",
+      "noi1": "pipăim",
+      "voi1": "pipăiți",
+      "ei1": "pipăie"
+    },
+    "participle": "pipăit",
+    "impS": "pipăie",
+    "impP": "pipăiți"
+  },
+  {
+    "id": 430,
+    "nameRo": ["însuși", 6],
+    "nameRu": "освоить, овладеть (знаниями, навыками)",
+    "conjugation": {
+      "eu": ["însușesc", 6],
+      "tu": "însușești",
+      "el": "însușește",
+      "noi": "însușim",
+      "voi": "însușiți",
+      "ei": "însușesc",
+      "eu1": "însușesc",
+      "tu1": "însușești",
+      "el1": "însușească",
+      "noi1": "însușim",
+      "voi1": "însușiți",
+      "ei1": "însușească"
+    },
+    "participle": "însușit",
+    "impS": "el",
+    "impP": "voi"
+  },
+  {
+    "id": 431,
+    "nameRo": ["da", 2],
+    "nameRu": "давать, дать",
+    "conjugation": {
+      "eu": ["dau", 2],
+      "tu": "dai",
+      "el": "dă",
+      "noi": "dăm",
+      "voi": "dați",
+      "ei": "dau",
+      "eu1": "dau",
+      "tu1": "dai",
+      "el1": "dea",
+      "noi1": "dăm",
+      "voi1": "dați",
+      "ei1": "dea"
+    },
+    "participle": "dat",
+    "impS": "dă",
+    "impP": "dați"
+  },
+  {
+    "id": 432,
+    "nameRo": ["prețui", 6],
+    "nameRu": "ценить, уважать, признавать важность, значимость",
+    "conjugation": {
+      "eu": ["prețuiesc", 7],
+      "tu": "prețuiești",
+      "el": "prețuiește",
+      "noi": "prețuim",
+      "voi": "prețuiți",
+      "ei": "prețuiesc",
+
+      "eu1": "prețuiesc",
+      "tu1": "prețuiești",
+      "el1": "prețuiască",
+      "noi1": "prețuim",
+      "voi1": "prețuiți",
+      "ei1": "prețuiască"
+    },
+    "participle": "prețuit",
+    "impS": "prețuiește",
+    "impP": "prețuiți"
+  },
+  {
+    "id": 433,
+    "nameRo": ["îndemna", 7],
+    "nameRu": "побуждать, призывать, понукать, подталкивать",
+    "conjugation": {
+      "eu": ["îndemn", 4],
+      "tu": "îndemni",
+      "el": "îndeamnă",
+      "noi": "îndemnăm",
+      "voi": "îndemnați",
+      "ei": "îndeamnă",
+
+      "eu1": "îndemn",
+      "tu1": "îndemni",
+      "el1": "îndemne",
+      "noi1": "îndemnăm",
+      "voi1": "îndemnați",
+      "ei1": "îndemne"
+    },
+    "participle": "îndemnat",
+    "impS": "îndeamnă",
+    "impP": "îndemnați"
   }
 ]

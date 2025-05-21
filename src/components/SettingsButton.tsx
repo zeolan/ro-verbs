@@ -24,7 +24,7 @@ import {
   getFromLang,
   setFromLang,
 } from "../store/reducer.ts";
-import { getRandomVerbsOrder, getSortedVerbsOrder } from "../utils.ts";
+import { getRandomVerbsOrder, getSortedVerbsOrder } from "../utils/utils.ts";
 import { Lang } from "../types.ts";
 
 function SettingsButton() {
@@ -51,7 +51,7 @@ function SettingsButton() {
     }
   };
 
-  const handleItemClick = (event: Event | React.SyntheticEvent) => {
+  const handleSortClick = (event: Event | React.SyntheticEvent) => {
     const dataset = (event.target as HTMLDivElement).dataset;
     setOpen(false);
     if (dataset.active === "false") {
@@ -133,7 +133,7 @@ function SettingsButton() {
               onKeyDown={handleListKeyDown}
             >
               <MenuItem
-                onClick={handleItemClick}
+                onClick={handleSortClick}
                 className={sortVerbs ? "active" : ""}
                 data-active={sortVerbs}
               >
@@ -142,13 +142,13 @@ function SettingsButton() {
                 >
                   <Check />
                 </ListItemIcon>
-                Сортування &nbsp;
-                <ListItemIcon>
+                Сортировка &nbsp;A-Z
+                {/* <ListItemIcon>
                   <SortByAlphaIcon />
-                </ListItemIcon>
+                </ListItemIcon> */}
               </MenuItem>
               <MenuItem
-                onClick={handleItemClick}
+                onClick={handleSortClick}
                 className={!sortVerbs ? "active" : ""}
                 data-active={!sortVerbs}
               >
@@ -157,7 +157,7 @@ function SettingsButton() {
                 >
                   <Check />
                 </ListItemIcon>
-                В випадковому порядку
+                В случайном порядке
               </MenuItem>
               <Divider />
               <MenuItem

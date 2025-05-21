@@ -11,7 +11,7 @@ import { useTheme } from "@mui/material/styles";
 import cx from "classnames";
 
 import { OutlinedButton, VerbButton } from "./MyButtons.js";
-import { LightTooltip } from "./MyTooltip.tsx";
+import HintTooltip from "./HintTooltip.tsx";
 import {
   getVerbs,
   getVerb,
@@ -24,7 +24,7 @@ import {
   getVerbsOrder,
   getFromLang,
 } from "../store/reducer.ts";
-import { getVerbByIdx } from "../utils.ts";
+import { getVerbByIdx } from "../utils/utils.ts";
 import { IVerb, Lang } from "../types.ts";
 import SearchList from "./SearchList.tsx";
 
@@ -46,11 +46,6 @@ const Verb: React.FC = () => {
   const [localNameRu, setLocalNameRu] = useState<string>("");
   const [localNameRo, setLocalNameRo] = useState<any>(null);
   const inputRef = useRef<HTMLInputElement>();
-
-  const tooltipText = `Натисніть на дієслово щоб подивитись переклад.
-     Натисніть ВІДМІНЮВАННЯ щоб подивитися відмінювання дієслова.
-     Натисніть ДАЛІ щоб перейти до наступного дієслова.
-     Наголос в дієслові позначається рисочкою над буквою`;
 
   useEffect(() => {
     if (verb) {
@@ -151,6 +146,17 @@ const Verb: React.FC = () => {
 
   const onListItemClick = (item: IVerb) => {
     dispatch(setVerb(item));
+
+    let searchedVerbIdx = -1;
+    verbsOrder.forEach((verbId, index) => {
+      if (item.id === verbId) {
+        searchedVerbIdx = index;
+      }
+    });
+
+    if (searchedVerbIdx > -1) {
+      dispatch(setVerbIdx(searchedVerbIdx));
+    }
     onCancelSearchClick();
   };
 
@@ -177,14 +183,18 @@ const Verb: React.FC = () => {
       setSearchLang(searchLang);
       setSearchResults(searchResults);
     } else if (searchString.length === 1) {
-      let searchResultsRo: any[] = [];
-      let searchResultsRu: any[] = [];
+      const searchResultsRo: any[] = [];
+      const searchResultsRu: any[] = [];
       verbs.forEach((item: any) => {
         const regExp = new RegExp(`^${searchString.toLowerCase()}`);
         const matchesRo = item.nameRo[0].match(regExp);
-        matchesRo && searchResultsRo.push(item);
+        if (!!matchesRo) {
+          searchResultsRo.push(item);
+        }
         const matchesRu = item.nameRu.match(regExp);
-        matchesRu && searchResultsRu.push(item);
+        if (matchesRu) {
+          searchResultsRu.push(item);
+        }
       });
       const searchResults = searchResultsRo.length
         ? searchResultsRo.sort((a: any, b: any) => {
@@ -215,13 +225,23 @@ const Verb: React.FC = () => {
       : localNameRo;
   };
 
+  const getVerbFontSize = () => {
+    return lang === Lang.ru
+      ? localNameRu.length > 60
+        ? "0.8em"
+        : localNameRu.length > 35
+        ? "0.9em"
+        : "1em"
+      : "1em";
+  };
+
   return verb ? (
     <div className="App-verb" onClick={hideTooltip}>
       {showSearchInput ? (
         <div className="App-verb-search-block">
           <TextField
             id="search-input"
-            label="Пошук"
+            label="Поиск"
             size="medium"
             inputRef={inputRef}
             variant="outlined"
@@ -266,15 +286,15 @@ const Verb: React.FC = () => {
                 rotated: fromLang !== lang,
               })}
             >
-              <LightTooltip
-                title={tooltipText}
-                open={tooltipOpen}
-                className="App-verb-tooltip"
-              >
-                <VerbButton variant="contained" onClick={translate}>
+              <HintTooltip open={tooltipOpen}>
+                <VerbButton
+                  variant="contained"
+                  onClick={translate}
+                  style={{ fontSize: getVerbFontSize() }}
+                >
                   {getVerbDisplay("front")}
                 </VerbButton>
-              </LightTooltip>
+              </HintTooltip>
             </div>
 
             <div
@@ -286,6 +306,7 @@ const Verb: React.FC = () => {
                 variant="contained"
                 onClick={translate}
                 sx={{ pt: "7px" }}
+                style={{ fontSize: getVerbFontSize() }}
               >
                 {getVerbDisplay("back")}
               </VerbButton>
@@ -301,7 +322,7 @@ const Verb: React.FC = () => {
               onClick={onConjugationClick}
               sx={{ borderColor: theme.palette.primary.main }}
             >
-              ВІДМІНЮВАННЯ
+              СПРЯЖЕНИЕ
             </OutlinedButton>
             <OutlinedButton
               onClick={onNextClick}

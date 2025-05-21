@@ -8,7 +8,8 @@ const Footer: React.FC = () => {
       <Paper elevation={0} sx={{ display: "flex" }}>
         <div className="App-footer-author">Author: Oleksandr_Z</div>
         <div className="App-footer-version">
-          {`v{process.env.REACT_APP_VERSION}-{numberOfVerbs}`}
+          {/* {`v${import.meta.process.env.REACT_APP_VERSION}-${numberOfVerbs}`} */}
+          {`v1.0.1-${numberOfVerbs}`}
         </div>
       </Paper>
     </div>
