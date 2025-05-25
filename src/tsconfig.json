@@ -1,7 +1,7 @@
 {
   "moduleResolution": "bundler",
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "react-jsx",
     "target": "es5",
     "noEmit": true,
     "esModuleInterop": true,
