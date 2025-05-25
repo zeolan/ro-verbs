@@ -1,4 +1,5 @@
-const data = require("../data.json");
+//const data = require("../data.json");
+import data from "../data.json" with { type: "json" };
 
 console.log(`Number of Verbs ==> ${data.length}`);
 let roNameArr = [];
