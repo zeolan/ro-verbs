@@ -81,41 +81,41 @@ const Conjugation: React.FC = () => {
     <CapButton key="title" variant="outlined">
       Present
     </CapButton>,
-    <LowCaseButton key="eu">{getNameRo(verb.conjugation.eu)}</LowCaseButton>,
-    <LowCaseButton key="tu">{verb.conjugation.tu}</LowCaseButton>,
-    <LowCaseButton key="el">{verb.conjugation.el}</LowCaseButton>,
-    <LowCaseButton key="noi">{verb.conjugation.noi}</LowCaseButton>,
-    <LowCaseButton key="voi">{verb.conjugation.voi}</LowCaseButton>,
-    <LowCaseButton key="ei">{verb.conjugation.ei}</LowCaseButton>,
+    <LowCaseButton key="eu">{getNameRo(verb!.conjugation.eu)}</LowCaseButton>,
+    <LowCaseButton key="tu">{verb!.conjugation.tu}</LowCaseButton>,
+    <LowCaseButton key="el">{verb!.conjugation.el}</LowCaseButton>,
+    <LowCaseButton key="noi">{verb!.conjugation.noi}</LowCaseButton>,
+    <LowCaseButton key="voi">{verb!.conjugation.voi}</LowCaseButton>,
+    <LowCaseButton key="ei">{verb!.conjugation.ei}</LowCaseButton>,
   ];
   const conjuctivButtons = [
     <CapButton key="title" variant="outlined">
       Conjuctive
     </CapButton>,
-    <LowCaseButton key="eu1">{"să " + verb.conjugation.eu1}</LowCaseButton>,
-    <LowCaseButton key="tu1">{"să " + verb.conjugation.tu1}</LowCaseButton>,
-    <LowCaseButton key="el1">{"să " + verb.conjugation.el1}</LowCaseButton>,
-    <LowCaseButton key="noi1">{"să " + verb.conjugation.noi1}</LowCaseButton>,
-    <LowCaseButton key="voi1">{"să " + verb.conjugation.voi1}</LowCaseButton>,
-    <LowCaseButton key="ei1">{"să " + verb.conjugation.ei1}</LowCaseButton>,
+    <LowCaseButton key="eu1">{"să " + verb!.conjugation.eu1}</LowCaseButton>,
+    <LowCaseButton key="tu1">{"să " + verb!.conjugation.tu1}</LowCaseButton>,
+    <LowCaseButton key="el1">{"să " + verb!.conjugation.el1}</LowCaseButton>,
+    <LowCaseButton key="noi1">{"să " + verb!.conjugation.noi1}</LowCaseButton>,
+    <LowCaseButton key="voi1">{"să " + verb!.conjugation.voi1}</LowCaseButton>,
+    <LowCaseButton key="ei1">{"să " + verb!.conjugation.ei1}</LowCaseButton>,
   ];
   const imperfectButtons = [
     <CapButton key="title" variant="outlined">
       Imperfect
     </CapButton>,
-    <LowCaseButton key="eu1">{verb.conjugation?.eu2 || "---"}</LowCaseButton>,
-    <LowCaseButton key="tu1">{verb.conjugation?.tu2 || "---"}</LowCaseButton>,
-    <LowCaseButton key="el1">{verb.conjugation?.el2 || "---"}</LowCaseButton>,
-    <LowCaseButton key="noi1">{verb.conjugation?.noi2 || "---"}</LowCaseButton>,
-    <LowCaseButton key="voi1">{verb.conjugation?.voi2 || "---"}</LowCaseButton>,
-    <LowCaseButton key="ei1">{verb.conjugation?.ei2 || "---"}</LowCaseButton>,
+    <LowCaseButton key="eu1">{verb!.conjugation?.eu2 || "---"}</LowCaseButton>,
+    <LowCaseButton key="tu1">{verb!.conjugation?.tu2 || "---"}</LowCaseButton>,
+    <LowCaseButton key="el1">{verb!.conjugation?.el2 || "---"}</LowCaseButton>,
+    <LowCaseButton key="noi1">{verb!.conjugation?.noi2 || "---"}</LowCaseButton>,
+    <LowCaseButton key="voi1">{verb!.conjugation?.voi2 || "---"}</LowCaseButton>,
+    <LowCaseButton key="ei1">{verb!.conjugation?.ei2 || "---"}</LowCaseButton>,
   ];
   const partButtons = [
     <CapButton key="title" variant="outlined">
       Participiu
     </CapButton>,
     <LowCaseButton key="part" sx={{ pl: "5px", pr: "5px" }}>
-      {verb.participle}
+      {verb!.participle}
     </LowCaseButton>,
   ];
   const impSButtons = [
@@ -123,7 +123,7 @@ const Conjugation: React.FC = () => {
       Imp.sing.
     </CapButton>,
     <LowCaseButton key="impS" sx={{ pl: "5px", pr: "5px" }}>
-      {verb.conjugation[verb.impS] || verb.impS}
+      {verb!.impS}
     </LowCaseButton>,
   ];
   const impPButtons = [
@@ -131,7 +131,7 @@ const Conjugation: React.FC = () => {
       Imp.plur.
     </CapButton>,
     <LowCaseButton key="impP" sx={{ pl: "5px", pr: "5px" }}>
-      {verb.conjugation[verb.impP] || verb.impP}
+      {verb!.impP}
     </LowCaseButton>,
   ];
 
@@ -152,8 +152,8 @@ const Conjugation: React.FC = () => {
     <div className="App-conjugation">
       <StyledPaper elevation={0} className="App-conjugation-block1">
         <span>a&nbsp;</span>
-        {getNameRo(verb.nameRo)}
-        <span>- {verb.nameRu}</span>
+        {getNameRo(verb!.nameRo)}
+        <span>- {verb!.nameRu}</span>
       </StyledPaper>
       <div className="App-conjugation-block2">
         <ButtonGroup

@@ -1,23 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 import { Mode, IVerb, Lang } from "../types.ts";
+import type { RootState} from "./store.ts";
 //import data from "../data_new.json";
 import data from "../data.json";
 
-interface MainState {
+export interface MainState {
   verb: IVerb | null;
   verbs: IVerb[];
   showTooltip: boolean;
   showConjugation: boolean;
   verbsOrder: number[];
   verbsOrderSorted: number[];
-  verbIdx: number | null;
+  verbIdx: number;
   numberOfVerbs: number;
   mode: string;
   sortVerbs: boolean;
   fromLang: Lang;
   showTermsOfUse: boolean;
 }
+
+//type IVerb_State = keyof MainState['verb'];
 
 const mode = localStorage.getItem("mode") || Mode.light;
 const verbs = data as IVerb[];
@@ -92,51 +95,51 @@ export const {
   setShowTermsOfUse,
 } = mainSlice.actions;
 
-export const getVerb = (state): IVerb => {
+export const getVerb = (state: RootState): IVerb | null => {
   return state.main.verb;
 };
 
-export const getVerbs = (state): IVerb[] => {
+export const getVerbs = (state: RootState): IVerb[] => {
   return state.main.verbs;
 };
 
-export const getShowTooltip = (state): boolean => {
+export const getShowTooltip = (state: RootState): boolean => {
   return state.main.showTooltip;
 };
 
-export const getShowConjugation = (state): boolean => {
+export const getShowConjugation = (state: RootState): boolean => {
   return state.main.showConjugation;
 };
 
-export const getMode = (state): string => {
+export const getMode = (state: RootState): string => {
   return state.main.mode;
 };
 
-export const getVerbsOrder = (state): number[] => {
+export const getVerbsOrder = (state: RootState): number[] => {
   return state.main.verbsOrder;
 };
 
-export const getVerbsOrderSorted = (state): number[] => {
+export const getVerbsOrderSorted = (state: RootState): number[] => {
   return state.main.verbsOrderSorted;
 };
 
-export const getVerbIdx = (state): number => {
+export const getVerbIdx = (state: RootState): number => {
   return state.main.verbIdx;
 };
 
-export const getNumberOfVerbs = (state): number => {
+export const getNumberOfVerbs = (state: RootState): number => {
   return state.main.numberOfVerbs;
 };
 
-export const getSortVerbs = (state): boolean => {
+export const getSortVerbs = (state: RootState): boolean => {
   return state.main.sortVerbs;
 };
 
-export const getFromLang = (state): Lang => {
+export const getFromLang = (state: RootState): Lang => {
   return state.main.fromLang;
 };
 
-export const getShowTermsOfUse = (state): boolean => {
+export const getShowTermsOfUse = (state: RootState): boolean => {
   return state.main.showTermsOfUse;
 };
 

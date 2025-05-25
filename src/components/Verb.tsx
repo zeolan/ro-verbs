@@ -47,7 +47,7 @@ const Verb: React.FC = () => {
   const [localNameRo, setLocalNameRo] = useState<string | JSX.Element | null>(
     null
   );
-  const inputRef = useRef<HTMLInputElement>();
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (verb) {
@@ -71,7 +71,7 @@ const Verb: React.FC = () => {
 
   const getNameRo = (): string | JSX.Element | null => {
     if (
-      typeof verb.nameRo === "object" &&
+      typeof verb!.nameRo === "object" &&
       verb !== null &&
       verb?.nameRo[0] &&
       verb?.nameRo[1] &&
@@ -169,9 +169,11 @@ const Verb: React.FC = () => {
     inputRef && inputRef.current && inputRef.current.focus();
   };
 
-  const onSearchChange = (e: Event | React.SyntheticEvent) => {
-    setSearchString(e.target.value);
-    const searchString = e.target.value.trim();
+  const onSearchChange = (e: Event | React.SyntheticEvent | InputEvent) => {
+    if (!e.target) return;
+    const target = e.target as HTMLInputElement;
+    setSearchString(target.value);
+    const searchString = target.value.trim();
     if (searchString.length > 1) {
       const searchResultsRo = verbs.filter((item: IVerb) =>
         item.nameRo[0].includes(searchString.toLowerCase())

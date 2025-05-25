@@ -1,7 +1,7 @@
 import { IVerb } from "../types.ts";
 
 export const getRandomVerbsOrder = (numVerbs: number): number[] => {
-  const verbsOrder = [];
+  const verbsOrder: number[] = [];
   let cnt = 0;
   while (cnt < numVerbs) {
     let verbIdInt;
@@ -33,7 +33,7 @@ export const getSortedVerbsOrder = (verbs: IVerb[]): number[] => {
   return verbsCopy.map((verb: IVerb) => verb.id);
 };
 
-export const getVerbByIdx = (verbs: IVerb[], idx: number): IVerb => {
+export const getVerbByIdx = (verbs: IVerb[], idx: number): IVerb | undefined => {
   const foundVerb = verbs.find((verb) => verb.id === idx);
   return foundVerb;
 };
