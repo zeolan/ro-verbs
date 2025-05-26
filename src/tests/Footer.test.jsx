@@ -1,7 +1,7 @@
 import React from 'react';
 // import { render, screen } from "@testing-library/react";
 import { renderWithProviders } from "./test-utils.tsx";
-import { beforeAll, describe, expect, it, xit } from "vitest";
+import { beforeAll, describe, expect, it } from "vitest";
 
 import Footer from "../components/Footer.tsx";
 
