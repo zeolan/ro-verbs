@@ -4,12 +4,12 @@ import { renderWithProviders } from "./test-utils.tsx";
 import { describe, expect, it } from "vitest";
 
 import Footer from "../components/Footer.tsx";
-import type { RootState } from "../store/store.ts";
+//import type { RootState } from "../store/store.ts";
 import data from "../data.json";
 
 describe("Test Footer", () => {
     const NUMBER_OF_VERBS = data.length;
-    const initialState: Partial<RootState> = {
+    const initialState = {
         main: {
             numberOfVerbs: NUMBER_OF_VERBS,
         },
