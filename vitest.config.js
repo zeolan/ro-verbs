@@ -6,5 +6,14 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: ["./src/setupTests.js"],
+    coverage: {
+      exclude: [
+        'public',
+        'dist',
+        'src/tests',
+        'src/setupTests.js',
+        '*.config.*'
+      ],
+    },
   },
 })
