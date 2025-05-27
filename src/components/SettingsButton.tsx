@@ -112,6 +112,7 @@ function SettingsButton() {
         aria-expanded={open ? "true" : undefined}
         aria-haspopup="true"
         onClick={handleClose}
+        data-testid="settings-button"
       >
         <MenuIcon color="primary" />
       </IconButton>
@@ -121,6 +122,7 @@ function SettingsButton() {
         role={undefined}
         placement="bottom-start"
         transition
+        data-testid="settings-popper"
         //disablePortal
       >
         <Paper>

@@ -14,7 +14,7 @@ export interface MainState {
   verbsOrderSorted: number[];
   verbIdx: number;
   numberOfVerbs: number;
-  mode: string;
+  mode: Mode;
   sortVerbs: boolean;
   fromLang: Lang;
   showTermsOfUse: boolean;
@@ -22,7 +22,6 @@ export interface MainState {
 
 //type IVerb_State = keyof MainState['verb'];
 
-const mode = localStorage.getItem("mode") || Mode.light;
 const verbs = data as IVerb[];
 
 const initialState: MainState = {
@@ -34,7 +33,7 @@ const initialState: MainState = {
   verbsOrderSorted: [],
   verbIdx: 0,
   numberOfVerbs: 0,
-  mode,
+  mode: Mode.light,
   sortVerbs: false,
   fromLang: Lang.ro,
   showTermsOfUse: true,
@@ -55,7 +54,6 @@ export const mainSlice = createSlice({
     },
     setMode: (state, action) => {
       state.mode = action.payload;
-      localStorage.setItem("mode", action.payload);
     },
     setVerbsOrder: (state, action) => {
       state.verbsOrder = action.payload;

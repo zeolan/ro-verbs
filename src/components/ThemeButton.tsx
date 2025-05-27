@@ -15,7 +15,7 @@ function ThemeButton() {
   };
 
   return (
-    <IconButton className="App-theme-button" onClick={toggleMode}>
+    <IconButton className="App-theme-button" onClick={toggleMode} data-testid="theme-button">
       {isLightMode ? (
         <DarkModeIcon color="primary" />
       ) : (
