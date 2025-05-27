@@ -11,6 +11,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 100",
     "check_data": "node src/utils/check_data.js",
+    "minify_data": "node src/utils/convert_data.js",
     "test": "vitest run",
     "test:cov": "vitest run --reporter=verbose --coverage",
     "preview": "vite preview --host"

@@ -1,8 +1,8 @@
-const fs = require("fs");
+import fs from "fs";
 
 var content = "";
 
-fs.readFile("./data.json", function (err, data) {
+fs.readFile(`${import.meta.dirname}/../data.json`, function (err, data) {
   if (err) throw err;
   content = data.toString();
   content = content.replace(/conjugation/g, "c");
@@ -24,7 +24,7 @@ fs.readFile("./data.json", function (err, data) {
   content = content.replace(/:\s+{/g, ":{");
   content = content.replace(/:\s+\[/g, ":[");
   content = content.replace(/,\s+{/g, ",{");
-  fs.writeFile("data_new.json", content, function (err) {
+  fs.writeFile(`${import.meta.dirname}/../data_new.json`, content, function (err) {
     if (err) throw err;
     console.log("It's saved!");
   });
