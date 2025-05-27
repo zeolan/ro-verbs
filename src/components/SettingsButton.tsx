@@ -143,7 +143,7 @@ function SettingsButton() {
                 >
                   <Check />
                 </ListItemIcon>
-                Сортировка &nbsp;A-Z
+                Сортировка A-Z
                 {/* <ListItemIcon>
                   <SortByAlphaIcon />
                 </ListItemIcon> */}

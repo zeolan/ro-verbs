@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import { renderWithProviders } from "./test-utils.tsx";
 import { describe, expect, it } from "vitest";
 
@@ -29,7 +29,7 @@ describe("Test ThemeButton", () => {
         expect(buttonElement).toBeVisible();
         const lightModeElement = getByTestId("LightModeIcon");
         expect(lightModeElement).toBeVisible();
-        await buttonElement.click();
+        await act( async () => {buttonElement.click()});
         const darkModeElement = getByTestId("DarkModeIcon");
         expect(darkModeElement).toBeVisible();
     });
@@ -40,7 +40,7 @@ describe("Test ThemeButton", () => {
         expect(buttonElement).toBeVisible();
         const darkModeElement = getByTestId("DarkModeIcon");
         expect(darkModeElement).toBeVisible();
-        await buttonElement.click();
+        await act( async () => {buttonElement.click()});
         const lightModeElement = getByTestId("LightModeIcon");
         expect(lightModeElement).toBeVisible();
     });
