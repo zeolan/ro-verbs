@@ -9969,5 +9969,28 @@
     "participle": "îndemnat",
     "impS": "îndeamnă",
     "impP": "îndemnați"
+  },
+  {
+    "id": 434,
+    "nameRo": ["(se) rade", 7],
+    "nameRu": "брить(ся) (бороду, усы, голову)",
+    "conjugation": {
+      "eu": ["rad", 2],
+      "tu": "razi",
+      "el": "rade",
+      "noi": "radem",
+      "voi": "radeți",
+      "ei": "rad",
+
+      "eu1": "rad",
+      "tu1": "razi",
+      "el1": "radă",
+      "noi1": "radem",
+      "voi1": "radeți",
+      "ei1": "radă"
+    },
+    "participle": "ras",
+    "impS": "rade",
+    "impP": "radeți"
   }
 ]
