@@ -102,7 +102,7 @@
 }
 
 .App-verb-block1-button {
-  width: 95%;
+  max-width: 95%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -111,14 +111,12 @@
   backface-visibility: hidden;
   transition: transform 0.5s 0s;
   button {
+    padding: 15px 15px 10px 15px;
     transition: font-size 0.2s;
     word-break: keep-all;
   }
   &.front {
     transform: rotateX(0deg);
-    button {
-      padding-top: 20px;
-    }
   }
   &.front.rotated {
     transform: rotateX(180deg);
@@ -147,19 +145,19 @@
 }*/
 @media screen and (min-width: 600px) and (min-height: 300px) and (orientation: landscape) {
   .App-verb-block1-button {
-    width: 70%;
+    width: fit-content;
     font-size: 40px;
   }
 }
 @media screen and (min-width: 600px) and (min-height: 300px) and (orientation: portrait) {
   .App-verb-block1-button {
-    width: 70%;
+    width: fit-content;
     font-size: 60px;
   }
 }
 @media screen and (min-width: 600px) and (min-height: 300px) {
   .App-verb-block1-button {
-    width: 60%;
+    width: fit-content;
     font-size: 60px;
     &.front {
       button {
@@ -170,14 +168,14 @@
 }
 @media screen and (orientation: landscape) {
   .App-verb-block1-button {
-    width: 70%;
+    width: fit-content;
     font-size: 40px;
   }
 }
 
 @media screen and (min-width: 500px) and (min-height: 300px) and (orientation: landscape) {
   .App-verb-block1-button {
-    width: 50%;
+    width: fit-content;
     font-size: 40px;
     button {
       padding: 30px !important;
@@ -186,7 +184,7 @@
 }
 @media screen and (min-width: 800px) and (min-height: 500px) {
   .App-verb-block1-button {
-    width: 50%;
+    width: fit-content;
     font-size: 60px;
     button {
       padding: 40px !important;
