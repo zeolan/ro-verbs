@@ -77,13 +77,13 @@
 .App-verb-buttons {
   padding: 20px 20px 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 @media screen and (min-width: 500px) {
   .App-verb-buttons {
     justify-content: center;
-    gap: 30px;
+    gap: 5%;
   }
 }
 
