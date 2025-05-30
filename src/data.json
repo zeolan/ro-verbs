@@ -9992,5 +9992,28 @@
     "participle": "ras",
     "impS": "rade",
     "impP": "radeți"
+  },
+  {
+    "id": 435,
+    "nameRo": ["împrumuta", 9],
+    "nameRu": "занимать, одалживать, брать взаймы, давать взаймы",
+    "conjugation": {
+      "eu": ["împrumut", 9],
+      "tu": "împrumuți",
+      "el": "împrumută",
+      "noi": "împrumutăm",
+      "voi": "împrumutați",
+      "ei": "împrumută",
+
+      "eu1": "împrumut",
+      "tu1": "împrumuți",
+      "el1": "împrumute",
+      "noi1": "împrumutăm",
+      "voi1": "împrumutați",
+      "ei1": "împrumute"
+    },
+    "participle": "împrumutat",
+    "impS": "împrumută",
+    "impP": "împrumutați"
   }
 ]
