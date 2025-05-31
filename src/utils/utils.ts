@@ -1,4 +1,4 @@
-import { IVerb } from "../types.ts";
+import { IVerb, Lang } from "../types.ts";
 
 export const getRandomVerbsOrder = (numVerbs: number): number[] => {
   const verbsOrder: number[] = [];
@@ -33,7 +33,59 @@ export const getSortedVerbsOrder = (verbs: IVerb[]): number[] => {
   return verbsCopy.map((verb: IVerb) => verb.id);
 };
 
-export const getVerbByIdx = (verbs: IVerb[], idx: number): IVerb | undefined => {
+export const searchVerbs = (
+  verbs: IVerb[],
+  searchString: string
+): [IVerb[], lang: Lang | null] => {
+  let searchResultsRo: IVerb[] = [];
+  let searchResultsRu: IVerb[] = [];
+  if (searchString.length > 1) {
+    searchResultsRo = verbs.filter((item: IVerb) =>
+      item.nameRo[0].includes(searchString.toLowerCase())
+    );
+    searchResultsRu = verbs.filter((item: IVerb) =>
+      item.nameRu.includes(searchString.toLowerCase())
+    );
+    const searchResults = searchResultsRo.length
+      ? searchResultsRo
+      : searchResultsRu;
+    const searchLang = searchResultsRo.length ? Lang.ro : Lang.ru;
+    //setSearchLang(searchLang);
+    return [searchResults, searchLang];
+  } else if (searchString.length === 1) {
+    verbs.forEach((item: IVerb) => {
+      const regExp = new RegExp(`^${searchString.toLowerCase()}`);
+      const matchesRo = item.nameRo[0].match(regExp);
+      if (matchesRo) {
+        searchResultsRo.push(item);
+      }
+      const matchesRu = item.nameRu.match(regExp);
+      if (matchesRu) {
+        searchResultsRu.push(item);
+      }
+    });
+    const searchResults = searchResultsRo.length
+      ? searchResultsRo.sort((a: IVerb, b: IVerb) => {
+          return a.nameRo[0] > b.nameRo[0]
+            ? 1
+            : a.nameRo[0] < b.nameRo[0]
+            ? -1
+            : 0;
+        })
+      : searchResultsRu.sort((a: IVerb, b: IVerb) => {
+          return a.nameRu > b.nameRu ? 1 : a.nameRu < b.nameRu ? -1 : 0;
+        });
+    const searchLang = searchResultsRo.length ? Lang.ro : Lang.ru;
+    return [searchResults, searchLang];
+  } else {
+    return [[], null];
+  }
+};
+
+export const getVerbByIdx = (
+  verbs: IVerb[],
+  idx: number
+): IVerb | undefined => {
   const foundVerb = verbs.find((verb) => verb.id === idx);
   return foundVerb;
 };

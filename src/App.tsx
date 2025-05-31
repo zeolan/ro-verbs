@@ -34,8 +34,8 @@ function App() {
   const showConjugation = useSelector(getShowConjugation);
   const isLightMode = useSelector(getMode) === Mode.light;
   const dispatch = useDispatch();
-  const numberOfVerbs = verbs.length;
-  localStorage.setItem("numberOfVerbs", JSON.stringify(numberOfVerbs));
+  const numberOfVerbs = verbs?.length ? verbs.length : 0;
+  //localStorage.setItem("numberOfVerbs", JSON.stringify(numberOfVerbs));
   //localStorage.setItem("version", [process.env.REACT_APP_VERSION]);
 
   useEffect(() => {

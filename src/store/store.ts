@@ -20,6 +20,7 @@ const persistConfig = {
     "showTermsOfUse",
     "fromLang",
     "mode",
+    "numberOfVerbs",
     "verbsOrder",
     "verbIdx",
     "sortVerbs",

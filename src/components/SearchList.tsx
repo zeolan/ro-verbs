@@ -27,6 +27,7 @@ const SearchList: React.FC<SearchListParams> = ({
         style={{
           backgroundColor: !isLightMode ? "#555555" : "#cccccc",
         }}
+        data-testid="search-list"
       >
         {searchResults.map((option) => (
           <ListItem

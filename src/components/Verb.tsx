@@ -24,7 +24,7 @@ import {
   getVerbsOrder,
   getFromLang,
 } from "../store/reducer.ts";
-import { getVerbByIdx } from "../utils/utils.ts";
+import { getVerbByIdx, searchVerbs } from "../utils/utils.ts";
 import { IVerb, Lang } from "../types.ts";
 import SearchList from "./SearchList.tsx";
 
@@ -174,50 +174,55 @@ const Verb: React.FC = () => {
     const target = e.target as HTMLInputElement;
     setSearchString(target.value);
     const searchString = target.value.trim();
-    if (searchString.length > 1) {
-      const searchResultsRo = verbs.filter((item: IVerb) =>
-        item.nameRo[0].includes(searchString.toLowerCase())
-      );
-      const searchResultsRu = verbs.filter((item: IVerb) =>
-        item.nameRu.includes(searchString.toLowerCase())
-      );
-      const searchResults = searchResultsRo.length
-        ? searchResultsRo
-        : searchResultsRu;
-      const searchLang = searchResultsRo.length ? Lang.ro : Lang.ru;
-      setSearchLang(searchLang);
-      setSearchResults(searchResults);
-    } else if (searchString.length === 1) {
-      const searchResultsRo: IVerb[] = [];
-      const searchResultsRu: IVerb[] = [];
-      verbs.forEach((item: IVerb) => {
-        const regExp = new RegExp(`^${searchString.toLowerCase()}`);
-        const matchesRo = item.nameRo[0].match(regExp);
-        if (matchesRo) {
-          searchResultsRo.push(item);
-        }
-        const matchesRu = item.nameRu.match(regExp);
-        if (matchesRu) {
-          searchResultsRu.push(item);
-        }
-      });
-      const searchResults = searchResultsRo.length
-        ? searchResultsRo.sort((a: IVerb, b: IVerb) => {
-            return a.nameRo[0] > b.nameRo[0]
-              ? 1
-              : a.nameRo[0] < b.nameRo[0]
-              ? -1
-              : 0;
-          })
-        : searchResultsRu.sort((a: IVerb, b: IVerb) => {
-            return a.nameRu > b.nameRu ? 1 : a.nameRu < b.nameRu ? -1 : 0;
-          });
-      const searchLang = searchResultsRo.length ? Lang.ro : Lang.ru;
-      setSearchLang(searchLang);
-      setSearchResults(searchResults);
-    } else {
-      setSearchResults([]);
+    const [results, lang] = searchVerbs(verbs, searchString);
+    setSearchResults(results);
+    if (lang) {
+      setSearchLang(lang);
     }
+    // if (searchString.length > 1) {
+    //   const searchResultsRo = verbs.filter((item: IVerb) =>
+    //     item.nameRo[0].includes(searchString.toLowerCase())
+    //   );
+    //   const searchResultsRu = verbs.filter((item: IVerb) =>
+    //     item.nameRu.includes(searchString.toLowerCase())
+    //   );
+    //   const searchResults = searchResultsRo.length
+    //     ? searchResultsRo
+    //     : searchResultsRu;
+    //   const searchLang = searchResultsRo.length ? Lang.ro : Lang.ru;
+    //   setSearchLang(searchLang);
+    //   setSearchResults(searchResults);
+    // } else if (searchString.length === 1) {
+    //   const searchResultsRo: IVerb[] = [];
+    //   const searchResultsRu: IVerb[] = [];
+    //   verbs.forEach((item: IVerb) => {
+    //     const regExp = new RegExp(`^${searchString.toLowerCase()}`);
+    //     const matchesRo = item.nameRo[0].match(regExp);
+    //     if (matchesRo) {
+    //       searchResultsRo.push(item);
+    //     }
+    //     const matchesRu = item.nameRu.match(regExp);
+    //     if (matchesRu) {
+    //       searchResultsRu.push(item);
+    //     }
+    //   });
+    //   const searchResults = searchResultsRo.length
+    //     ? searchResultsRo.sort((a: IVerb, b: IVerb) => {
+    //         return a.nameRo[0] > b.nameRo[0]
+    //           ? 1
+    //           : a.nameRo[0] < b.nameRo[0]
+    //           ? -1
+    //           : 0;
+    //       })
+    //     : searchResultsRu.sort((a: IVerb, b: IVerb) => {
+    //         return a.nameRu > b.nameRu ? 1 : a.nameRu < b.nameRu ? -1 : 0;
+    //       });
+    //   const searchLang = searchResultsRo.length ? Lang.ro : Lang.ru;
+    //   setSearchLang(searchLang);
+    //   setSearchResults(searchResults);
+    // } else {
+    //   setSearchResults([]);
+    // }
   };
 
   const getVerbDisplay = (side: string) => {

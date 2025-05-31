@@ -5,6 +5,8 @@ import { Provider } from "react-redux";
 
 import type { AppTestStore, RootState } from "../store/store.ts";
 import { setupTestStore } from "../store/store.ts";
+import { Lang, Mode } from "../types.ts";
+import data from "../data.json";
 // As a basic setup, import your same slice reducers
 
 // This type interface extends the default options for render from RTL, as well
@@ -35,3 +37,15 @@ export function renderWithProviders(
     ...render(ui, { wrapper: Wrapper, ...renderOptions }),
   };
 }
+
+export const defaultInitialState = {
+  preloadedState: {
+    main: {
+      fromLang: Lang.ro,
+      sortVerbs: false,
+      verbs: data,
+      mode: Mode.light,
+      numberOfVerbs: data.length,
+    },
+  },
+};
