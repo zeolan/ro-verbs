@@ -1,12 +1,9 @@
-import React, { useState, useEffect, useRef, JSX } from "react";
+import React, { useState, useEffect, JSX } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { IconButton } from "@mui/material";
-import { Search, Close } from "@mui/icons-material";
+import { Search } from "@mui/icons-material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import BackspaceIcon from "@mui/icons-material/Backspace";
-import TextField from "@mui/material/TextField";
-import InputAdornment from "@mui/material/InputAdornment";
 import { useTheme } from "@mui/material/styles";
 import cx from "classnames";
 
@@ -24,9 +21,9 @@ import {
   getVerbsOrder,
   getFromLang,
 } from "../store/reducer.ts";
-import { getVerbByIdx, searchVerbs } from "../utils/utils.ts";
+import { getVerbByIdx } from "../utils/utils.ts";
 import { IVerb, Lang } from "../types.ts";
-import SearchList from "./SearchList.tsx";
+import SearchVerb from "./SearchVerb.tsx";
 
 const Verb: React.FC = () => {
   const theme = useTheme();
@@ -39,15 +36,11 @@ const Verb: React.FC = () => {
   const fromLang = useSelector(getFromLang);
 
   const [lang, setLang] = useState<Lang>(fromLang);
-  const [searchLang, setSearchLang] = useState<Lang>(fromLang);
-  const [searchString, setSearchString] = useState<string>("");
   const [showSearchInput, setShowSearchInput] = useState<boolean>(false);
-  const [searchResults, setSearchResults] = useState<IVerb[]>([]);
   const [localNameRu, setLocalNameRu] = useState<string>("");
   const [localNameRo, setLocalNameRo] = useState<string | JSX.Element | null>(
     null
   );
-  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (verb) {
@@ -142,8 +135,6 @@ const Verb: React.FC = () => {
   };
 
   const onCancelSearchClick = () => {
-    setSearchString("");
-    setSearchResults([]);
     setShowSearchInput(false);
   };
 
@@ -161,68 +152,6 @@ const Verb: React.FC = () => {
       dispatch(setVerbIdx(searchedVerbIdx));
     }
     onCancelSearchClick();
-  };
-
-  const handleClearSearchString = () => {
-    setSearchResults([]);
-    setSearchString("");
-    inputRef && inputRef.current && inputRef.current.focus();
-  };
-
-  const onSearchChange = (e: Event | React.SyntheticEvent | InputEvent) => {
-    if (!e.target) return;
-    const target = e.target as HTMLInputElement;
-    setSearchString(target.value);
-    const searchString = target.value.trim();
-    const [results, lang] = searchVerbs(verbs, searchString);
-    setSearchResults(results);
-    if (lang) {
-      setSearchLang(lang);
-    }
-    // if (searchString.length > 1) {
-    //   const searchResultsRo = verbs.filter((item: IVerb) =>
-    //     item.nameRo[0].includes(searchString.toLowerCase())
-    //   );
-    //   const searchResultsRu = verbs.filter((item: IVerb) =>
-    //     item.nameRu.includes(searchString.toLowerCase())
-    //   );
-    //   const searchResults = searchResultsRo.length
-    //     ? searchResultsRo
-    //     : searchResultsRu;
-    //   const searchLang = searchResultsRo.length ? Lang.ro : Lang.ru;
-    //   setSearchLang(searchLang);
-    //   setSearchResults(searchResults);
-    // } else if (searchString.length === 1) {
-    //   const searchResultsRo: IVerb[] = [];
-    //   const searchResultsRu: IVerb[] = [];
-    //   verbs.forEach((item: IVerb) => {
-    //     const regExp = new RegExp(`^${searchString.toLowerCase()}`);
-    //     const matchesRo = item.nameRo[0].match(regExp);
-    //     if (matchesRo) {
-    //       searchResultsRo.push(item);
-    //     }
-    //     const matchesRu = item.nameRu.match(regExp);
-    //     if (matchesRu) {
-    //       searchResultsRu.push(item);
-    //     }
-    //   });
-    //   const searchResults = searchResultsRo.length
-    //     ? searchResultsRo.sort((a: IVerb, b: IVerb) => {
-    //         return a.nameRo[0] > b.nameRo[0]
-    //           ? 1
-    //           : a.nameRo[0] < b.nameRo[0]
-    //           ? -1
-    //           : 0;
-    //       })
-    //     : searchResultsRu.sort((a: IVerb, b: IVerb) => {
-    //         return a.nameRu > b.nameRu ? 1 : a.nameRu < b.nameRu ? -1 : 0;
-    //       });
-    //   const searchLang = searchResultsRo.length ? Lang.ro : Lang.ru;
-    //   setSearchLang(searchLang);
-    //   setSearchResults(searchResults);
-    // } else {
-    //   setSearchResults([]);
-    // }
   };
 
   const getVerbDisplay = (side: string) => {
@@ -248,46 +177,10 @@ const Verb: React.FC = () => {
   return verb ? (
     <div className="App-verb" onClick={hideTooltip}>
       {showSearchInput ? (
-        <div className="App-verb-search-block">
-          <TextField
-            id="search-input"
-            label="Поиск"
-            size="medium"
-            inputRef={inputRef}
-            variant="outlined"
-            autoFocus={true}
-            value={searchString}
-            onChange={onSearchChange}
-            autoComplete="off"
-            style={{ paddingRight: "0 !important" }}
-            InputProps={{
-              endAdornment: (
-                <InputAdornment
-                  position="end"
-                  sx={{
-                    position: "relative",
-                    visibility: searchString.length ? "visible" : "hidden",
-                  }}
-                >
-                  <IconButton onClick={handleClearSearchString} edge="end">
-                    <BackspaceIcon />
-                  </IconButton>
-                </InputAdornment>
-              ),
-            }}
-          />
-          <IconButton
-            onClick={onCancelSearchClick}
-            className="App-verb-search-block_close-btn"
-          >
-            <Close />
-          </IconButton>
-          <SearchList
-            searchResults={searchResults}
-            searchLang={searchLang}
-            onItemClick={onListItemClick}
-          />
-        </div>
+        <SearchVerb
+          onCancel={onCancelSearchClick}
+          onItemClick={onListItemClick}
+        />
       ) : (
         <>
           <div className="App-verb-block1">
