@@ -35,8 +35,7 @@ function App() {
   const isLightMode = useSelector(getMode) === Mode.light;
   const dispatch = useDispatch();
   const numberOfVerbs = verbs?.length ? verbs.length : 0;
-  //localStorage.setItem("numberOfVerbs", JSON.stringify(numberOfVerbs));
-  //localStorage.setItem("version", [process.env.REACT_APP_VERSION]);
+  dispatch(setNumberOfVerbs(numberOfVerbs));
 
   useEffect(() => {
     if (sortVerbs) {
@@ -51,7 +50,6 @@ function App() {
       dispatch(setVerb(lastVerb));
     } else {
       const verbsOrder = getRandomVerbsOrder(numberOfVerbs);
-      dispatch(setNumberOfVerbs(numberOfVerbs));
       if (verbsOrder.length) {
         dispatch(setVerbsOrder(verbsOrder));
         const initialIndex = verbsOrder[0];

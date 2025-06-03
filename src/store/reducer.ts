@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 import { Mode, IVerb, Lang } from "../types.ts";
-import type { RootState} from "./store.ts";
+import type { RootState } from "./store.ts";
 //import data from "../data_new.json";
 import data from "../data.json";
 
