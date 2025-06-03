@@ -10015,5 +10015,28 @@
     "participle": "împrumutat",
     "impS": "împrumută",
     "impP": "împrumutați"
+  },
+  {
+    "id": 436,
+    "nameRo": ["despăgubi", 9],
+    "nameRu": "возмещать убытки, ущерб, компенсировать",
+    "conjugation": {
+      "eu": ["despăgubesc", 9],
+      "tu": "despăgubești",
+      "el": "despăgubește",
+      "noi": "despăgubim",
+      "voi": "despăgubiți",
+      "ei": "despăgubesc",
+
+      "eu1": "despăgubesc",
+      "tu1": "despăgubești",
+      "el1": "despăgubească",
+      "noi1": "despăgubim",
+      "voi1": "despăgubiți",
+      "ei1": "despăgubească"
+    },
+    "participle": "despăgubit",
+    "impS": "despăgubește",
+    "impP": "despăgubiți"
   }
 ]
