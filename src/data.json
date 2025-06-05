@@ -64,8 +64,8 @@
       "ei1": "coboare"
     },
     "participle": "coborât",
-    "impS": "el",
-    "impP": "voi"
+    "impS": "coboară",
+    "impP": "coborâți"
   },
   {
     "id": 3,
@@ -130,8 +130,8 @@
       "ei1": "intre"
     },
     "participle": "intrat",
-    "impS": "el",
-    "impP": "voi"
+    "impS": "intră",
+    "impP": "intrați"
   },
   {
     "id": 6,
@@ -174,8 +174,8 @@
       "ei1": "vorbească"
     },
     "participle": "vorbit",
-    "impS": "el",
-    "impP": "voi"
+    "impS": "vorbește",
+    "impP": "vorbiți"
   },
   {
     "id": 8,
@@ -287,8 +287,8 @@
       "ei1": "mănânce"
     },
     "participle": "mâncat",
-    "impS": "el",
-    "impP": "voi"
+    "impS": "mănâncă",
+    "impP": "mâncați"
   },
   {
     "id": 13,
@@ -4242,8 +4242,8 @@
       "ei1": "ajute"
     },
     "participle": "ajutat",
-    "impS": "el",
-    "impP": "voi"
+    "impS": "ajută",
+    "impP": "ajutați"
   },
   {
     "id": 185,
@@ -9899,8 +9899,8 @@
       "ei1": "însușească"
     },
     "participle": "însușit",
-    "impS": "el",
-    "impP": "voi"
+    "impS": "însușește",
+    "impP": "însușiți"
   },
   {
     "id": 431,
