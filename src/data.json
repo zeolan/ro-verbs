@@ -10038,5 +10038,27 @@
     "participle": "despăgubit",
     "impS": "despăgubește",
     "impP": "despăgubiți"
+  },
+  {
+    "id": 437,
+    "nameRo": ["scăpa", 5],
+    "nameRu": "убежать, спастись, вырваться, избежать, отделаться от чего-то, избавиться от чего-то",
+    "conjugation": {
+      "eu": ["scap", 3],
+      "tu": "scapi",
+      "el": "scapă",
+      "noi": "scăpăm",
+      "voi": "scăpați",
+      "ei": "scapă",
+      "eu1": "scap",
+      "tu1": "scapi",
+      "el1": "scape",
+      "noi1": "scăpăm",
+      "voi1": "scăpați",
+      "ei1": "scape"
+    },
+    "participle": "scăpat",
+    "impS": "scapă",
+    "impP": "scăpați"
   }
 ]
