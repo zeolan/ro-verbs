@@ -2040,7 +2040,7 @@
   },
   {
     "id": 89,
-    "nameRo": ["(se) gândi", 10],
+    "nameRo": ["se gândi", 8],
     "nameRu": "думать, размышлять",
     "conjugation": {
       "eu": ["gândesc", 5],
@@ -2615,8 +2615,8 @@
   },
   {
     "id": 114,
-    "nameRo": ["șterge", 3],
-    "nameRu": "вытирать, стирать, протирать",
+    "nameRo": ["(se) șterge", 8],
+    "nameRu": "вытирать, стирать, протирать; вытираться",
     "conjugation": {
       "eu": ["șterg", 3],
       "tu": "ștergi",
