@@ -1,19 +1,19 @@
 // Establish a cache name
 // !!! Need to increment CACHE_VERSION to force cache updates.
-const CACHE_VERSION = 446;
+const CACHE_VERSION = 445;
 const CURRENT_CACHE = `main-${CACHE_VERSION}`;
 
-const cacheFiles = [
-  "./index.html",
-  "./manifest.json",
-  "./static/js/",
-  "./assets/",
-];
+// const cacheFiles = [
+//   "./index.html",
+//   "./manifest.json",
+//   "./static/js/",
+//   "./assets/",
+// ];
 
 self.addEventListener("install", (evt) => {
   return evt.waitUntil(
     caches.open(CURRENT_CACHE).then((cache) => {
-      return cache.addAll(cacheFiles);
+      //return cache.addAll(cacheFiles);
     })
   );
 });
