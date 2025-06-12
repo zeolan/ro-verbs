@@ -10060,5 +10060,49 @@
     "participle": "scăpat",
     "impS": "scapă",
     "impP": "scăpați"
+  },
+  {
+    "id": 438,
+    "nameRo": ["(se) întrece", 10],
+    "nameRu": "обогнать, обойти, перегнать, опередить; превосходить, превышать",
+    "conjugation": {
+      "eu": ["întrec", 5],
+      "tu": "întreci",
+      "el": "întrece",
+      "noi": "întrecem",
+      "voi": "întreceți",
+      "ei": "întrec",
+      "eu1": "întrec",
+      "tu1": "întreci",
+      "el1": "întreacă",
+      "noi1": "întrecem",
+      "voi1": "întreceți",
+      "ei1": "întreacă"
+    },
+    "participle": "întrecut",
+    "impS": "întreci",
+    "impP": "întreceți"
+  },
+  {
+    "id": 439,
+    "nameRo": ["trece", 3],
+    "nameRu": "переходить, пересекать, проходить, проезжать; проходить (о времени), проходить мимо, проходить через какой-то этап; зайти, заскочить",
+    "conjugation": {
+      "eu": ["trec", 3],
+      "tu": "treci",
+      "el": "trece",
+      "noi": "trecem",
+      "voi": "treceți",
+      "ei": "trec",
+      "eu1": "trec",
+      "tu1": "treci",
+      "el1": "treacă",
+      "noi1": "trecem",
+      "voi1": "treceți",
+      "ei1": "treacă"
+    },
+    "participle": "trecut",
+    "impS": "treci",
+    "impP": "treceți"
   }
 ]
