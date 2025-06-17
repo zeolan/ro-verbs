@@ -8595,7 +8595,7 @@
   {
     "id": 374,
     "nameRo": ["preciza", 7],
-    "nameRu": "уточнить, уточнять",
+    "nameRu": "уточнять, уточнить, определять точно, четко и ясно выражать, формулировать",
     "conjugation": {
       "eu": ["precizez", 7],
       "tu": "precizezi",
@@ -10104,5 +10104,140 @@
     "participle": "trecut",
     "impS": "treci",
     "impP": "treceți"
+  },
+  {
+    "id": 440,
+    "nameRo": ["(se) remarca", 12],
+    "nameRu": "замечать, отмечать, обращать внимание; отмечаться",
+    "conjugation": {
+      "eu": ["remarc", 4],
+      "tu": "remarci",
+      "el": "remarcă",
+      "noi": "remarcăm",
+      "voi": "remarcați",
+      "ei": "remarcă",
+      "eu1": "remarc",
+      "tu1": "remarci",
+      "el1": "remarce",
+      "noi1": "remarcăm",
+      "voi1": "remarcați",
+      "ei1": "remarce"
+    },
+    "participle": "remarcat",
+    "impS": "remarcă",
+    "impP": "remarcați"
+  },
+  {
+    "id": 441,
+    "nameRo": ["ține", 2],
+    "nameRu": "держать, удерживать что-то в руках, поддерживать, хранить",
+    "conjugation": {
+      "eu": ["țin", 2],
+      "tu": "ții",
+      "el": "ține",
+      "noi": "ținem",
+      "voi": "țineți",
+      "ei": "țin",
+
+      "eu1": "țin",
+      "tu1": "ții",
+      "el1": "țină",
+      "noi1": "ținem",
+      "voi1": "țineți",
+      "ei1": "țină"
+    },
+    "participle": "ținut",
+    "impS": "ține",
+    "impP": "țineți"
+  },
+  {
+    "id": 442,
+    "nameRo": ["găzdui", 6],
+    "nameRu": "принимать, размещать (мероприятие, событие, гостей, участников); временно проживать у кого-то",
+    "conjugation": {
+      "eu": ["găzduiesc", 7],
+      "tu": "găzduiești",
+      "el": "găzduiește",
+      "noi": "găzduim",
+      "voi": "găzduiți",
+      "ei": "găzduiesc",
+
+      "eu1": "găzduiesc",
+      "tu1": "găzduiești",
+      "el1": "găzduiască",
+      "noi1": "găzduim",
+      "voi1": "găzduiți",
+      "ei1": "găzduiască"
+    },
+    "participle": "găzduit",
+    "impS": "găzduiește",
+    "impP": "găzduiți"
+  },
+  {
+    "id": 443,
+    "nameRo": ["declara", 7],
+    "nameRu": "заявлять, объявлять, декларировать, провозглашать; заявляться, объявляться, появляться",
+    "conjugation": {
+      "eu": ["declar", 5],
+      "tu": "declari",
+      "el": "declară",
+      "noi": "declarăm",
+      "voi": "declarați",
+      "ei": "declară",
+      "eu1": "declar",
+      "tu1": "declari",
+      "el1": "declare",
+      "noi1": "declarăm",
+      "voi1": "declarați",
+      "ei1": "declare"
+    },
+    "participle": "declarat",
+    "impS": "declară",
+    "impP": "declarați"
+  },
+  {
+    "id": 444,
+    "nameRo": ["(se) împinge", 9],
+    "nameRu": "толкать(ся), пихать, проталкивать, протискиваться; отталкивать, отодвигать; побуждать, подталкивать",
+    "conjugation": {
+      "eu": ["împing", 4],
+      "tu": "împingi",
+      "el": "împinge",
+      "noi": "împingem",
+      "voi": "împingeți",
+      "ei": "împing",
+      "eu1": "împing",
+      "tu1": "împingi",
+      "el1": "împingă",
+      "noi1": "împingem",
+      "voi1": "împingeți",
+      "ei1": "împingă"
+    },
+    "participle": "împins",
+    "impS": "împinge",
+    "impP": "împingeți"
+  },
+  {
+    "id": 445,
+    "nameRo": ["estima", 6],
+    "nameRu": "оценивать, рассчитывать, прикидывать, предполагать, полагать",
+    "conjugation": {
+      "eu": ["estimez", 6],
+      "tu": "estimezi",
+      "el": "estimează",
+      "noi": "estimăm",
+      "voi": "estimați",
+      "ei": "estimează",
+
+      "eu1": "estimez",
+      "tu1": "estimezi",
+      "el1": "estimeze",
+      "noi1": "estimăm",
+      "voi1": "estimați",
+      "ei1": "estimeze"
+    },
+    "participle": "estimat",
+    "impS": "estimează",
+    "impP": "estimați"
   }
 ]
