@@ -833,10 +833,10 @@
 
       "eu1": "plătesc",
       "tu1": "plătești",
-      "el1": "plătește",
+      "el1": "plătească",
       "noi1": "plătim",
       "voi1": "plătiți",
-      "ei1": "plătesc"
+      "ei1": "plătească"
     },
     "participle": "plătit",
     "impS": "plătește",
@@ -9698,26 +9698,26 @@
   },
   {
     "id": 422,
-    "nameRo": ["împune", 4],
-    "nameRu": "навязывать, принуждать, заставлять",
+    "nameRo": ["impune", 4],
+    "nameRu": "навязывать, устанавливать(правила), принуждать, заставлять",
     "conjugation": {
-      "eu": ["împun", 4],
-      "tu": "împui",
-      "el": "împune",
-      "noi": "împunem",
-      "voi": "împuneți",
-      "ei": "împun",
+      "eu": ["impun", 4],
+      "tu": "impui",
+      "el": "impune",
+      "noi": "impunem",
+      "voi": "impuneți",
+      "ei": "impun",
 
-      "eu1": "împun",
-      "tu1": "împui",
-      "el1": "împună",
-      "noi1": "împunem",
-      "voi1": "împuneți",
-      "ei1": "împună"
+      "eu1": "impun",
+      "tu1": "impui",
+      "el1": "impună",
+      "noi1": "impunem",
+      "voi1": "impuneți",
+      "ei1": "impună"
     },
-    "participle": "împus",
-    "impS": "împune",
-    "impP": "împuneți"
+    "participle": "impus",
+    "impS": "impune",
+    "impP": "impuneți"
   },
   {
     "id": 423,
@@ -9998,7 +9998,7 @@
     "nameRo": ["împrumuta", 9],
     "nameRu": "занимать, одалживать, брать взаймы, давать взаймы",
     "conjugation": {
-      "eu": ["împrumut", 9],
+      "eu": ["împrumut", 7],
       "tu": "împrumuți",
       "el": "împrumută",
       "noi": "împrumutăm",
@@ -10239,5 +10239,97 @@
     "participle": "estimat",
     "impS": "estimează",
     "impP": "estimați"
+  },
+  {
+    "id": 446,
+    "nameRo": ["alcătui", 7],
+    "nameRu": "составлять, собирать, создавать, формировать",
+    "conjugation": {
+      "eu": ["alcătuiesc", 7],
+      "tu": "alcătuiești",
+      "el": "alcătuiește",
+      "noi": "alcătuim",
+      "voi": "alcătuiți",
+      "ei": "alcătuiesc",
+
+      "eu1": "alcătuiesc",
+      "tu1": "alcătuiești",
+      "el1": "alcătuiască",
+      "noi1": "alcătuim",
+      "voi1": "alcătuiți",
+      "ei1": "alcătuiască"
+    },
+    "participle": "alcătuit",
+    "impS": "alcătuiește",
+    "impP": "alcătuiți"
+  },
+  {
+    "id": 447,
+    "nameRo": ["ezita", 5],
+    "nameRu": "сомневаться, колебаться, медлить, не решаться",
+    "conjugation": {
+      "eu": ["ezit", 3],
+      "tu": "eziți",
+      "el": "ezită",
+      "noi": "ezităm",
+      "voi": "ezitați",
+      "ei": "ezită",
+
+      "eu1": "ezit",
+      "tu1": "eziți",
+      "el1": "ezite",
+      "noi1": "ezităm",
+      "voi1": "ezitați",
+      "ei1": "ezite"
+    },
+    "participle": "ezitat",
+    "impS": "ezită",
+    "impP": "ezitați"
+  },
+  {
+    "id": 448,
+    "nameRo": ["(se) pretinde", 11],
+    "nameRu": "настаивать, претендовать, требовать; притворяться, делать вид",
+    "conjugation": {
+      "eu": ["pretind", 5],
+      "tu": "pretinzi",
+      "el": "pretinde",
+      "noi": "pretindem",
+      "voi": "pretindeți",
+      "ei": "pretind",
+
+      "eu1": "pretind",
+      "tu1": "pretinzi",
+      "el1": "pretindă",
+      "noi1": "pretindem",
+      "voi1": "pretindeți",
+      "ei1": "pretindă"
+    },
+    "participle": "pretins",
+    "impS": "pretinde",
+    "impP": "pretindeți"
+  },
+  {
+    "id": 449,
+    "nameRo": ["gestiona", 8],
+    "nameRu": "управлять, распоряжаться (финансами, ресурсами), вести дела",
+    "conjugation": {
+      "eu": ["gestionez", 8],
+      "tu": "gestionezi",
+      "el": "gestionează",
+      "noi": "gestionăm",
+      "voi": "gestionați",
+      "ei": "gestionează",
+
+      "eu1": "gestionez",
+      "tu1": "gestionezi",
+      "el1": "gestioneze",
+      "noi1": "gestionăm",
+      "voi1": "gestionați",
+      "ei1": "gestioneze"
+    },
+    "participle": "gestionat",
+    "impS": "gestionează",
+    "impP": "gestionați"
   }
 ]
