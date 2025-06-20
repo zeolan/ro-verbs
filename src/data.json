@@ -10331,5 +10331,28 @@
     "participle": "gestionat",
     "impS": "gestionează",
     "impP": "gestionați"
+  },
+  {
+    "id": 450,
+    "nameRo": ["împiedica", 9],
+    "nameRu": "препятствовать, мешать, затруднять, тормозить, предотвратить; препятствовать кому-то что-то сделать",
+    "conjugation": {
+      "eu": ["împiedic", 5],
+      "tu": "împiedici",
+      "el": "împiedică",
+      "noi": "împiedicăm",
+      "voi": "împiedicați",
+      "ei": "împiedică",
+
+      "eu1": "împiedic",
+      "tu1": "împiedici",
+      "el1": "împiedice",
+      "noi1": "împiedicăm",
+      "voi1": "împiedicați",
+      "ei1": "împiedice"
+    },
+    "participle": "împiedicat",
+    "impS": "împiedică",
+    "impP": "împiedicați"
   }
 ]
