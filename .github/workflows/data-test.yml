@@ -1,7 +1,11 @@
 name: check-data-json
 run-name: ${{ github.actor }} is checking data.json file
 # ^ we use github context to give an access to the username
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - main
 jobs:
   check-data-json:
     runs-on: ubuntu-latest

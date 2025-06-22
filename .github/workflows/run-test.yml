@@ -1,9 +1,13 @@
 name: test-runner
 run-name: ${{ github.actor }} is running tests
 # ^ we use github context to give an access to the username
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - main
 jobs:
-  vitest-test:
+  run-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

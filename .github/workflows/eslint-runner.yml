@@ -1,7 +1,11 @@
 name: eslint-runner
 run-name: ${{ github.actor }} is running eslint
 # ^ we use github context to give an access to the username
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - main
 jobs:
   run-eslint:
     runs-on: ubuntu-latest
