@@ -55,6 +55,7 @@ const SearchVerb: React.FC<SearchListParams> = ({ onItemClick, onCancel }) => {
   return (
     <div className="App-verb-search-block">
       <TextField
+        className="App-verb-search-input"
         id="search-input"
         label="Поиск"
         size="medium"

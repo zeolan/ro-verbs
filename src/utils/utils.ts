@@ -55,7 +55,11 @@ export const searchVerbs = (
   } else if (searchString.length === 1) {
     verbs.forEach((item: IVerb) => {
       const regExp = new RegExp(`^${searchString.toLowerCase()}`);
-      const matchesRo = item.nameRo[0].match(regExp);
+      const itemToMatch = // "(se) verb" or "se verb"==> "verb"
+        item.nameRo[0].split(" ").length > 1
+          ? item.nameRo[0].split(" ")[1]
+          : item.nameRo[0];
+      const matchesRo = itemToMatch.match(regExp);
       if (matchesRo) {
         searchResultsRo.push(item);
       }
