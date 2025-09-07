@@ -18,7 +18,7 @@ import { getVerbByIdx } from "../utils/utils.ts";
 
 const personButtons = [
   <CapButton key="persona" variant="outlined">
-    Persona
+    Persoană
   </CapButton>,
   <LowCaseButton key="eu">Eu</LowCaseButton>,
   <LowCaseButton key="tu">Tu</LowCaseButton>,
