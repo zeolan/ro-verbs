@@ -79,7 +79,7 @@ const Conjugation: React.FC = () => {
 
   const presentButtons = [
     <CapButton key="title" variant="outlined">
-      Present
+      Indicativ
     </CapButton>,
     <LowCaseButton key="eu">{getNameRo(verb!.conjugation.eu)}</LowCaseButton>,
     <LowCaseButton key="tu">{verb!.conjugation.tu}</LowCaseButton>,
@@ -90,7 +90,7 @@ const Conjugation: React.FC = () => {
   ];
   const conjuctivButtons = [
     <CapButton key="title" variant="outlined">
-      Conjuctive
+      Conjunctiv
     </CapButton>,
     <LowCaseButton key="eu1">{"să " + verb!.conjugation.eu1}</LowCaseButton>,
     <LowCaseButton key="tu1">{"să " + verb!.conjugation.tu1}</LowCaseButton>,
@@ -106,8 +106,12 @@ const Conjugation: React.FC = () => {
     <LowCaseButton key="eu1">{verb!.conjugation?.eu2 || "---"}</LowCaseButton>,
     <LowCaseButton key="tu1">{verb!.conjugation?.tu2 || "---"}</LowCaseButton>,
     <LowCaseButton key="el1">{verb!.conjugation?.el2 || "---"}</LowCaseButton>,
-    <LowCaseButton key="noi1">{verb!.conjugation?.noi2 || "---"}</LowCaseButton>,
-    <LowCaseButton key="voi1">{verb!.conjugation?.voi2 || "---"}</LowCaseButton>,
+    <LowCaseButton key="noi1">
+      {verb!.conjugation?.noi2 || "---"}
+    </LowCaseButton>,
+    <LowCaseButton key="voi1">
+      {verb!.conjugation?.voi2 || "---"}
+    </LowCaseButton>,
     <LowCaseButton key="ei1">{verb!.conjugation?.ei2 || "---"}</LowCaseButton>,
   ];
   const partButtons = [
