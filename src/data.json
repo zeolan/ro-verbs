@@ -86,8 +86,8 @@
       "ei1": "iasă"
     },
     "participle": "ieșit",
-    "impS": "tu",
-    "impP": "voi"
+    "impS": "ieși",
+    "impP": "ieșiți"
   },
   {
     "id": 4,
@@ -108,8 +108,8 @@
       "ei1": "meargă"
     },
     "participle": "mers",
-    "impS": "tu",
-    "impP": "voi"
+    "impS": "mergi",
+    "impP": "mergeți"
   },
   {
     "id": 5,
@@ -196,8 +196,8 @@
       "ei1": "stea"
     },
     "participle": "stat",
-    "impS": "tu",
-    "impP": "voi"
+    "impS": "stai",
+    "impP": "stați"
   },
   {
     "id": 9,
@@ -218,8 +218,8 @@
       "ei1": "știe"
     },
     "participle": "știut",
-    "impS": "tu",
-    "impP": "voi"
+    "impS": "știi",
+    "impP": "știți"
   },
   {
     "id": 10,
