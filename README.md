@@ -29,3 +29,50 @@ Builds the app for production to the `dist` folder.\
 
 Runs eslint check
 
+# Vercel comands
+
+## `npx vercel`
+
+Deploy to preview
+
+## `npx vercel --prod`
+
+Deploy to production
+
+## `vercel --prebuilt`
+
+Deploy prebuilt version to preview
+
+## `vercel build`
+
+Build the project without deploying
+
+## `vercel env pull .env.local`
+
+Pull the environment variables
+
+## `vercel env add VARIABLE_NAME`
+
+Add a new environment variable
+
+## `vercel env ls`
+
+List environment variables
+
+## `vercel env rm VARIABLE_NAME`
+
+Remove an environment variable
+
+## `vercel secrets add SECRET_NAME`
+
+Add a new secret
+
+## `vercel secrets ls`
+
+List secrets
+
+## `vercel secrets rm SECRET_NAME`
+
+Remove a secret
+
+# Learn more
