@@ -24,8 +24,13 @@ fs.readFile(`${import.meta.dirname}/../data.json`, function (err, data) {
   content = content.replace(/:\s+{/g, ":{");
   content = content.replace(/:\s+\[/g, ":[");
   content = content.replace(/,\s+{/g, ",{");
-  fs.writeFile(`${import.meta.dirname}/../data_new.json`, content, function (err) {
-    if (err) throw err;
-    console.log("It's saved!");
-  });
+  content = content.replace(/\s+/g, "");
+  fs.writeFile(
+    `${import.meta.dirname}/../data_new.json`,
+    content,
+    function (err) {
+      if (err) throw err;
+      console.log("It's saved!");
+    }
+  );
 });
