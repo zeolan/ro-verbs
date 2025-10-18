@@ -75,4 +75,12 @@ List secrets
 
 Remove a secret
 
-# Learn more
+# Data check
+
+## `npm run data_check`
+
+Run src/utils/check_data.js script to check data.json integrity
+
+## `python3 -m json.tool src/data.json`
+
+Another way to check data.json integrity
